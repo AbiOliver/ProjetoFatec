@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css" media="(min-width: 920px)">
+  
+    <style>
+        @font-face {
+    font-family: 'titulo2';
+    src: url('font/White\ On\ Black.ttf');
+}
+@keyframes animation2 {
+    from{transform: translatex(-40px);}
+    to{transform: translatex(40x)}
+ }
+ @keyframes pisca{
+    form{
+        border-right-color: white;
+    }
+    to{
+        border-right-color:  transparent ;
+    }
+ }
+ @keyframes forma {
+    from{
+        width: 0;
+    }
+    to{
+        width: 18em;
+    }
+    
+ }
+
+    header{
+        background-color: #ff0099;
+    }
+  
+        nav a {
+        font-weight: bold;
+    
+    }
+    .content h2{
+        color:#1c3380 ;
+    }
+   footer{
+    background-color: #00b8f2;
+  
+    
+   }
+   .second{
+    background: url('Imagens/duvida.jpg') no-repeat center center/ cover fixed;
+   }
+   
+   h3{
+   color: #ff0099;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+   }
+   aside h2{
+    text-indent: 60px;
+    text-align: center;
+    margin:0 auto;
+   }
+ 
+  
+   i{
+    text-align: center;
+    font-weight: bolder;
+    
+   }
+   i:hover{
+    
+    text-shadow: 1px 1px 1px black;
+   
+   }
+   .slides h2{
+    color: #1c3380;
+   
+   }
+       
+        .slides p,h2{
+            color: #ff0099;
+            margin-top: 20px;
+            padding-left: 50px;
+            padding-right: 250px;
+        }
+        .bar{
+            display: none;
+        }
+        span:hover{
+            font-family: 'titulo2';     
+        }
+        aside.espaco{
+            min-height:730px;
+            padding: 30px;
+            text-align: justify;
+            column-count: 3;
+            column-width: 10px;
+        }
+       aside:after{
+        font-size: .8em;
+        padding-left: 65px;
+        color: rgba(0, 0, 0, 0.493);
+        content: 'Desenvolvido por Thalita de Araújo';
+       }
+        aside h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        aside p{
+            min-width: 920px;
+            padding: 4px;
+            border-radius: 5px;
+           
+            color:#1c3380;
+            margin: auto;
+            text-align: center;
+            font-size: 1em;
+           font-family: 'Courier New', Courier, monospace;
+        }
+       .line{
+        text-align: center;
+        padding: 0px;
+        display: none;
+        
+        color:rgba(0, 0, 0, 0.54);
+        font-family: 'Courier New', Courier, monospace;
+        font-size:3em;
+        margin: 0 auto ;
+        white-space:nowrap ;
+        overflow: hidden;
+      }
+      h6{
+        border-right: 2px solid  rgba(0, 0, 0, 0.666);
+        display: none;
+      }
+      .animac{
+      
+        animation: pisca 500ms infinite normal ;
+        animation: forma 10s steps(80)   normal;
+      }
+    
+      section:active>h6.line{
+        display: block;
+       transition-delay: 2s;
+      }
+      header{
+            background-color: #00b8f2;
+        }
+        #size{
+            width: 150px;
+            height: 250px;
+            
+        }
+        .h2  h2{
+            color:  #ff0099;
+        }
+     
+     .alem{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        width:800px;
+        animation: animation2  1.5s ease-in-out alternate infinite ;
+
+        list-style-type: none;
+       display: flex;
+       flex-direction:column;
+       gap: 5px;
+       align-items: center;
+       justify-content: space-evenly;
+      
+     }
+    
+     #texto1{
+        
+        line-height: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #00baf22d;
+        padding: 5px;
+        margin: 10px;
+     }
+     #texto2{
+        
+        line-height: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        background-color: #00baf22d;
+     }
+     button{
+        background-color: #00b8f2;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 23.5em;
+        color: #1c3380;
+        box-shadow: 2px 2px 2px black ;
+        font-family: 'titulo2';
+        cursor: pointer;
+        
+     }
+     button:active{
+        transform: translate( 2px, 2px);
+       
+     }
+    
+     button:active >p{
+        display: flex;
+     }
+    
+     .lista{
+        text-align: center;
+     }
+     .h2{
+        background-color: #00b8f2;
+     }
+     .h2 h2{
+        color: #1c3380;
+     }
+     /*abaixo está o style para telas abaixo de 920px e à cima  de 600px*/
+           
+          
+     
+    @media ( max-width:919px){
+         
+         *{
+             margin: 0px;
+             padding: 0px;
+         } 
+         @font-face {
+             font-family: 'titulo';
+             src: url('/Fontes/AbrilFatface-Regular.ttf');
+         }
+         @font-face {
+             font-family: 'paragrafo';
+             src: url('/font/SansitaSwashed-Light.ttf');
+         }
+         @font-face {
+             font-family: 'titulo2';
+             src: url('/font/White\ On\ Black.ttf');
+         }
+         @font-face {
+             font-family: 'chop';
+             src: url('font/Chopsic.otf');
+         }
+          @keyframes animation2 {
+             from{transform: translatex(-40px);}
+             to{transform: translatex(40x)}
+          }
+          @keyframes pisca{
+             form{
+                 border-right-color: white;
+             }
+             to{
+                 border-right-color:  transparent ;
+             }
+          }
+          @keyframes forma {
+             from{
+                 width: 0;
+             }
+             to{
+                 width: 18em;
+             }
+             
+          }
+         
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+         
+         
+         @keyframes gradient{
+             0%{
+                 
+              background-position: 0 50%;
+             }
+             50%{
+                 background-position: 100% 50%;
+             }
+             100%{
+                 background-position: 0 50%;
+             }
+             }
+         
+         :root{
+             --cor-principal: #1c3380;
+             --cor2: #00b8f2;
+             --cor3: #ff0099;
+             --cor4: #ffffff;
+         
+             --font1:'titulo';
+             --font2: 'paragrafo';
+             --font3: 'titulo2';
+             --font4:  'chop';
+             --font5:'Poppins', sans-serif;
+         
+         }
+         ::-webkit-scrollbar{
+             width: 0px;
+             height: 0px ;
+         }
+         html, body{
+            
+            min-width: 100vw;
+           
+         }
+         body{
+             animation: gradient 10s ease infinite;
+             background-image: linear-gradient(-45deg, var(--cor-principal),  var(--cor2), var(--cor3), pink);
+             background-size: 300% 300%;
+             background-repeat: no-repeat;
+         }
+         img{
+             width: 100%;
+         
+         }
+         header{
+             display:flex;
+             flex-direction:column ;
+             align-items: center;
+             padding: 13px;
+             justify-content: space-between;
+             
+             gap: 10px;
+             background-image: linear-gradient( 55deg,var(--cor2), rgba(0, 0, 255, 0.708));
+           
+         }
+         
+        
+        
+         header h1{
+                text-align: center;
+                text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.504);
+                font-weight: lighter;
+                font-family: var(--font5);
+                  font-style: oblique;
+                font-variant:small-caps;
+                color:white;
+                font-size: 3em;
+   
+}
+nav{
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+   
+    justify-content: center;
+    padding-bottom: 5px;
+    margin-right: 1px;
+    display:flex;
+    gap: 2px;
+    row-gap: 15px;
+
+   
+}
+nav a{
+    font-weight: bold;
+    font-family: var(--font1);
+    font-size: 1em;
+    padding: 1px;
+    margin-right: 10px;
+    font-variant:small-caps;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    transition: .6s;
+    border-radius: 6px;
+    box-shadow:  0px 2px 0px rgb(255, 250, 250);
+    background-color: rgba(0, 0, 0, 0.071);
+    transform: translate(-2px,  -2px);
+}
+
+         .slides{
+             box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.222);
+             text-align: justify;
+            animation: animation 10s ease-in-out;
+            display: flex;
+            width: 500%;
+            height: 100%;
+         }
+         .slide{
+             display: flex;
+             flex-direction: row-reverse;
+             align-items: center;
+             justify-content: space-around;
+             gap: 1em;
+             width: 20%;
+             transition: .6s;
+         }
+         #size{
+             width: 160px;
+             height: 250px;
+             
+         }
+         .slide img{
+           
+             width: 80%;
+             height:80%;
+         }
+         #slide1:checked ~ .s1{
+             
+             margin-left: 0;
+         }
+         
+         #slide2:checked ~ .s1{
+             
+             margin-left: -20%;
+         }
+         #slide3:checked ~ .s1{
+             
+             margin-left: -40%;
+         }
+         #slide4:checked ~ .s1{
+            
+             margin-left: -60%;
+         }
+         #slide5:checked ~ .s1{
+            
+             margin-left: -80%;
+         }
+         input{
+             display: none;
+         }
+         .bar{
+             width: 18px;
+             height: 17px;
+             border: 2px solid var(--cor2);
+             margin-right:6px ;
+             border-radius: 6px ;
+             cursor: pointer;
+             transition: .6s;
+             
+         }
+         .bar:hover{
+             background-color: var(--cor-principal);
+             transform: translate(-2px,  -2px);
+             box-shadow: 2px 2px 5px black;
+         }
+         .nav{
+             position: absolute;
+             bottom: 5px;
+             left: 50%;
+             transform: translate(-50%);
+             display: flex;
+         }
+         nav a{
+             font-family: var(--font1);
+           
+             font-size: 1.2em;
+             padding: 5px;
+             margin-right: 10px;
+             font-variant:small-caps;
+             color: white;
+             text-decoration: none;
+            
+            
+         }
+         .content{
+             box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.571);
+              background-color: var(--cor4);
+              height: 250px;
+              width:100vw;
+              overflow: hidden;
+              position: relative;
+          }
+          .content p{
+             padding-right: 10px;
+             padding-left: 10px;
+             margin-top: 10px;
+             text-align: left;
+             color: #00b8f2;
+             font-family: var(--font2);
+         }
+         .content h2{
+             text-align: left;
+             color: #1c3380;
+             padding-left: 10px;
+              text-shadow:2px 2px 4px rgba(0, 0, 0, 0.682);
+          }
+         
+         
+         .h2{
+             font-family: var(--font2);
+             font-size: 10px;
+             text-align: justify;
+           
+             margin: auto;
+             width: 300px;
+             border-radius: 20px ;
+             animation: animation2 alternate 2s ease-in-out infinite;
+             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);   
+            
+           
+                     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.796); 
+             
+         }
+         
+         #h2{
+            background-color: var(--cor2);
+             color: var(--cor3);
+              text-shadow: 1x 1px 5px black;
+              margin: auto;
+              text-align: center;
+              width: 300px;
+              padding: 15px;
+              border-radius: 10px;
+              font-family: var(--font3);
+              box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.603); 
+          }
+          .alem{
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            width:400px;
+            animation: animation2  1.5s ease-in-out alternate infinite ;
+            list-style-type: none;
+      display: flex;
+      flex-direction:column;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-around;
+      font-size: small;
+      height: 400px;
+
+     
+     }
+   #esp{
+    margin-left:30px;
+   }
+    #texto1{
+        
+        line-height: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #00baf22d;
+        padding: 5px;
+        margin: 20px;
+     }
+     #texto2{
+        
+        line-height: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: #00baf22d;
+     }
+     aside.alem:after{
+        font-size: .6em;
+        padding-left: 1px;
+        color: rgba(0, 0, 0, 0.493);
+        content: none;
+       }
+       button{
+        background-color: #00b8f2;
+        border-radius: 10px;
+        padding: 5px;
+        color: #1c3380;
+        box-shadow: 2px 2px 2px black ;
+        font-family: 'titulo2';
+        cursor: pointer;
+        
+        margin-left:150px;
+     }
+     button:active{
+        transform: translate( 2px, 2px);
+       
+     }
+     button:active >p{
+        display: flex;
+     }
+    
+    
+          
+          .second{
+             background: black url('../Imagens/GRUPO\ DE\ EXTENSÃO.jpg') no-repeat center top/ cover  fixed;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: center;
+            color: black;
+            background-color: rgba(137, 137, 137, 0.059);
+            background-color: var(--cor2);
+            text-align: center;
+            box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.371);
+            
+             width: 100vw;
+             height: 300px;
+         }
+         aside{
+            margin: auto;
+             box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.396);
+             height: 800px;
+             width: 85vw;
+             text-align: justify;
+             font-weight: bold;
+             color: var(--cor-principal);
+             padding: 5px;
+             font-family: 'Courier New', Courier, monospace;
+             background: url('Imagens/textura.jpg')center top/cover fixed;
+             border-radius: 10px 10px 0px 0px ;
+             font-size: 1em;
+             column-count: 2;
+             
+         }
+        
+         aside article{
+          
+           padding: 10px;
+         }
+         aside div{
+            width: auto;
+         }
+         aside  h3{
+           padding: 5px;
+         }
+         aside h2.extra{
+            margin-left: -95px;
+         }
+         aside a{
+             text-decoration: none;
+             color: #ff0099;
+             transition: .6;
+         }
+         aside a:hover{
+             transform: translate(-5px,  -2px);
+             background-color: #00b8f2;
+         }
+         
+         aside a::after{
+             content: '\1F6EB';
+         }
+         
+         aside::after{
+            
+            content: none;
+         }
+            footer{
+             border-top: 1px solid rgba(0, 0, 0, 0.462);
+             border-radius: 5px;
+             background-color: var(--cor2);
+             padding-bottom: 10px;
+         }
+         footer img{
+             display: block;
+             padding: -10px;
+             width: 50%;
+             margin: 0 auto;
+         }
+         footer p{
+             padding-left: 5px;
+             font-family: var(--font1);
+             color: black;
+         }
+         .line{
+                
+             text-align: center;
+             padding: 0px;
+             display: none;
+             color:rgba(0, 0, 0, 0.593);
+             font-family: 'Courier New', Courier, monospace;
+             font-size:1em;
+             margin: 0 auto ;
+             white-space:nowrap ;
+             overflow: hidden;
+           }
+           h6{
+             border-right: 2px solid rgba(0, 0, 0, 0.632);
+             display: none;
+           }
+           .animac{
+             animation: pisca 500ms infinito normal ;
+             animation: forma 10s steps(120) normal;
+           }
+         
+           section:hover>h6{
+             display: block;
+            
+           }
+           .second{
+                  background: black url('Imagens/GRUPO\ DE\ EXTENSÃO.jpg') no-repeat center top/ cover  fixed;
+                }
+                span{
+    color: #689ADE;
+ }
+            } 
+               
+             
+            span{
+    color: #689ADE;
+ }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>ex</span>FATEC</h1>
+        <nav>
+            <ul class="active" >
+                <a href="../index.html" target="_parent">Página Inicial</a>
+                <a href="index2.html" target="_parent">Home</a>
+                <a href="sobre.html" target="_self">Sobre</a>
+                <a href="Duvidas.html" target="_self">Dúvidas</a>
+                <a href="ideias.html"target="_self">Ideias</a>
+                <a href="Contatos.html">Contatos</a>
+            </ul>
+           
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slides">
+          
+            <input type="radio" name="slide" id="slide3">
+           
+            <div>
+                    <h2>Dúvidas</h2>
+                    <p>Se há dúvidas, há soluções!</p>
+                </div>
+                <div><img src="imagens/sobre.png" alt="Cristals e mountains" id="size"></div>
+            </div>
+            
+                <label  class="bar"for="slide3"></label>
+            </div>
+        </div>
+    </div>
+    <div  class="h2"> 
+        <h2 id="h2">Dúvidas?</h2>
+    </div>
+    <aside class="alem">
+        <h2 id="esp">Exemplo:</h2>
+        <div class="paragrafo ">  
+       <div class="texto">
+        
+            
+                     <div id="texto1">
+                          
+                            Maria e João cursam Análise e Desenvolvimento de Sistemas.
+                            Ambos compartilham interesse por Desenvolvimento de
+                            Jogos, porém, nenhum dos dois se aprofunda de maneira
+                            direta nesse tema porque o foco da grade curricular é outro.
+                     </div>
+                   
+                               
+               
+                    <div  id="texto2">
+                        Eles decidem criar um grupo de extensão para
+                        estudar Desenvolvimento de Jogos por conta própria.
+                        Como eles vão fazer isso?</div>
+                   
+                    
+                        
+                    
+                    <div>
+                        <a href="duvida2.html"><button>Saiba mais!</button></a>
+                    </div>
+           
+       </div>
+          </div>
+     </aside>
+   
+       <section class="second">
+        <h6 class="line animac">Obrigado, pela colaboração!</h6>
+    </section>
+   
+   
+    <aside class="espaco ">
+        <article>
+            <div class="paragrafo  ">
+                   <h2 class="extra">Dúvidas</h2>
+            <div>
+                <h3>
+                    O grupo precisa se
+                    encontrar de maneira
+                    presencial?
+            
+                </h3>
+                
+                    Não necessariamente!
+                    Pode ser que os encontros
+                    e desenvolvimento de
+                    alguma atividade (ex.:
+                    criação de um site) seja
+                    100% online. Quem define
+                    são os representantes do
+                    grupo.
+              
+            </div>
+            <div>
+                <h3>
+                    Os integrantes precisam
+                    ser do mesmo curso?
+                </h3>
+            
+                    Isso é definido pelos
+                    representantes do grupo.
+                    Há três opções:
+               
+                
+                    
+                        Aceitar somente
+                            pessoas do mesmo curso.
+                    
+                             Aceitar pessoas de
+                                cursos correlatos.
+                     
+                           
+                                Aceitar pessoas de
+                                 outros cursos (ex.: Design,
+                                 Jogos, Gestão entre
+                                 outros).
+                         
+            </div>
+            <div>
+                <h3>
+                    O assunto a ser estudado
+                    precisa ter relação direta com
+                    o meu curso?
+                </h3>
+                
+                    Não necessariamente!
+                    Pode ser que os integrantes de
+                    certo grupo X cursem ADS e
+                    alimentem um desejo por
+                    Geopolítica. Sendo assim,
+                    criam um grupo para debater
+                    este tópico.
+            
+            </div>
+            <div>
+                <h3>
+                    Pessoas que não estão na
+                    graduação (seja na FATEC ou
+                    em outra instituição)podem
+                    participar?
+                </h3>
+              
+                    
+                        Não há motivos para não
+                        aceitar, exceto dois:
+                
+                
+               
+                       
+                            - A entrada na FATEC: caso o
+                            grupo queira se reunir
+                            presencialmente, somente os
+                            alunos podem entrar, fazer
+                            empréstimo de livros, usar os
+                            computadores*;
+                      
+                   
+                        
+                            *A entrada até pode ser permitida,
+                            mas isso se tornaria um problema a
+                            longo prazo.
+                      
+                 
+                        
+                            - Participação em eventos: seja
+                            dentro ou fora da FATEC,
+                            comparecer a alguns eventos
+                            pode ser restrito apenas a
+                            estudantes de graduação.
+                       
+                    
+            
+                </ul>
+            </div>
+              </div>
+        </article>
+     </aside>
+     <footer>
+        <img src="Imagens/Grupo3.png" alt="">
+         <div> 
+         </div>
+       
+     </footer>

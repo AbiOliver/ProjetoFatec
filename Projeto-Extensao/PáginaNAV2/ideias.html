@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css" media="(min-width: 920px)">
+    
+    <style>
+        #size{
+            width: 150px;
+            height: 250px;
+            
+        }
+        aside{
+            height: 800px;
+         
+        }
+        aside div{
+     
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          justify-content: center;
+          text-align: center;
+          width: 600px;
+          margin: auto;
+        }
+       
+       aside:after{
+            
+        font-size: .8em;
+        padding-left:315px;
+        color: rgba(0, 0, 0, 0.493);
+        content: 'Desenvolvido por Thalita de Araújo';
+       }
+        header{
+            
+            border-bottom: 1px solid rgba(0, 0, 0, 0.323);
+            box-shadow: 1x 1px 1px rgba(0, 0, 0, 0.585);
+            background-color: white;
+        }
+        header h1{
+            color: #1c3380;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.314);
+        }
+        nav a{
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.314);
+            color:#1c3380 ;
+        }
+        nav a:hover{
+          
+            border-end-end-radius: 1px #1c3380;
+            border-bottom: 1px solid #00b8f2 ;
+        }
+        .slides h2{
+            color: #1c3380;
+        }
+        .slides p{
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.61);
+        }
+        .h2{
+            
+            box-shadow:inset 5px 2px 5px rgba(0, 0, 0, 0.518);
+            background-color: white;
+        }
+        .h2 h2{
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.667);
+            color: #1c3380;
+            text-decoration: underline white;
+            
+        }
+        .bar{
+            display: none;
+        }
+        footer{
+            box-shadow:  1px 1px 1px rgba(0, 0, 0, 0.425);
+            background-color: white;
+        }
+        span{
+            font-weight: bolder;
+            color: black;
+        }
+        /* abaixo está a @media abaixo de 920px*/
+          @media (max-width:920px){
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: 'titulo';
+    src: url('Fontes/AbrilFatface-Regular.ttf');
+}
+@font-face {
+    font-family: 'paragrafo';
+    src: url('font/SansitaSwashed-Light.ttf');
+}
+@font-face {
+    font-family: 'titulo2';
+    src: url('font/White\ On\ Black.ttf');
+}
+@font-face {
+    font-family: 'chop';
+    src: url('font/Chopsic.otf');
+}
+ @keyframes animation2 {
+    from{transform: translatex(-40px);}
+    to{transform: translatex(40x)}
+ }
+ @keyframes pisca{
+    form{
+        border-right-color: white;
+    }
+    to{
+        border-right-color:  transparent ;
+    }
+ }
+ @keyframes forma {
+    from{
+        width: 0;
+    }
+    to{
+        width: 18em;
+    }
+    
+ }
+
+ 
+
+
+@keyframes gradient{
+    0%{
+        
+     background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root{
+    --cor-principal: #1c3380;
+    --cor2: #00b8f2;
+    --cor3: #ff0099;
+    --cor4: #ffffff;
+
+    --font1:'titulo';
+    --font2: 'paragrafo';
+    --font3: 'titulo2';
+    --font4:  'chop';
+    --font5:'Poppins', sans-serif;
+
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px ;
+}
+html, body{
+   
+   min-width: 100vw;
+  
+}
+body{
+    animation: gradient 10s ease infinite;
+    background-image: linear-gradient(-45deg, var(--cor-principal),  var(--cor2), var(--cor3), pink);
+    background-size: 300% 300%;
+    background-repeat: no-repeat;
+}
+img{
+    width: 100%;
+
+}
+header{
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+    padding: 13px;
+    justify-content: space-between;
+    
+    gap: 10px;
+    background-color: white;
+  
+
+}
+
+
+header h1{
+                text-align: center;
+                text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.504);
+                font-weight: lighter;
+                font-family: var(--font5);
+                font-style: oblique;
+                font-variant:small-caps;
+                color:var(--cor-principal);
+                font-size: 3em;
+   
+}
+nav{
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+   
+    justify-content: center;
+    padding-bottom: 5px;
+    margin-right: 1px;
+    display:flex;
+    gap: 2px;
+    row-gap: 15px;
+
+   
+}
+nav a{
+    font-weight: bold;
+    font-family: var(--font1);
+    font-size: 1em;
+    padding: 1px;
+    margin-right: 22px;
+    font-variant:small-caps;
+    color:var(--cor-principal);
+    text-decoration: none;
+}
+nav a:hover{
+    transition: .6s;
+    border-radius: 6px;
+    box-shadow:  0px 2px 0px rgb(255, 250, 250);
+    background-color: rgba(0, 0, 0, 0.071);
+    transform: translate(-2px,  -2px);
+}
+
+
+.slides{
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.222);
+    text-align: justify;
+    animation: animation 10s ease-in-out;
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    width: 20%;
+    transition: .6s;
+}
+#size{
+    width: 160px;
+    height: 250px;
+    
+}
+.slide img{
+  
+    width: 80%;
+    height:80%;
+}
+#slide1:checked ~ .s1{
+    
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+   
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+   
+    margin-left: -80%;
+}
+input{
+    display: none;
+}
+.bar{
+    width: 18px;
+    height: 17px;
+    border: 2px solid var(--cor2);
+    margin-right:6px ;
+    border-radius: 6px ;
+    cursor: pointer;
+    transition: .6s;
+    
+}
+.bar:hover{
+    background-color: var(--cor-principal);
+    transform: translate(-2px,  -2px);
+    box-shadow: 2px 2px 5px black;
+}
+.nav{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.content{
+    box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.571);
+     background-color: var(--cor4);
+     height: 250px;
+     width:100vw;
+     overflow: hidden;
+     position: relative;
+ }
+ .content p{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: #00b8f2;
+    font-family: var(--font1);
+}
+.content h2{
+    text-align: left;
+    color: #1c3380;
+    padding-left: 10px;
+     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.682);
+ }
+
+
+.h2{
+    font-family: var(--font2);
+    font-size: 10px;
+    text-align: justify;
+    background-color: white;
+    margin: auto;
+    width: 300px;
+    border-radius: 20px ;
+    animation: animation2 alternate 2s ease-in-out infinite;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);    
+    
+}
+#h2{
+    
+     text-shadow: 1x 1px 5px black;
+     margin: auto;
+     text-align: center;
+     width: 300px;
+     padding: 15px;
+     border-radius: 10px;
+     font-family: var(--font3);
+     color: var(--cor-principal);
+ }
+ .second{
+    background: black url('./Imagens/GRUPO\ DE\ EXTENSÃO.jpg') no-repeat center top/ cover  fixed;
+   display: flex;
+   flex-direction: row;
+   align-items:center;
+   justify-content: center;
+   color: black;
+   background-color: rgba(137, 137, 137, 0.059);
+   background-color: var(--cor2);
+   text-align: center;
+   box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.371);
+   
+    width: 100vw;
+    height: 300px;
+}
+aside{
+    margin: auto;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.396);
+    background-color: white;
+    padding: 1.5em;
+    width: 85vw;
+    text-align: justify;
+    font-weight: bold;
+    color: var(--cor-principal);
+    line-height: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    background: url('./Imagens/textura.jpg')center top/cover fixed;
+    border-radius: 10px 10px 0px 0px ;
+    height: 500px;
+}
+aside div{
+    margin-bottom: 5px;
+    width: auto;
+}
+aside a{
+    text-decoration: none;
+    color: #ff0099;
+    transition: .6;
+}
+aside a:hover{
+    transform: translate(-5px,  -2px);
+ 
+}
+aside::after{
+    content: none;
+}
+
+aside a::after{
+    content: '\1F6EB';
+   
+}
+
+   footer{
+  
+    border-radius: 5px;
+    background-color: var(--cor4);
+    padding-bottom: 10px;
+}
+footer img{
+    display: block;
+    padding: -10px;
+    width: 50%;
+    margin: 0 auto;
+}
+footer p{
+    padding-left: 5px;
+    font-family: var(--font1);
+    color: black;
+}
+.line{
+       
+    text-align: center;
+    padding: 0px;
+    display: none;
+    color:rgba(0, 0, 0, 0.593);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1em;
+    margin: 0 auto ;
+    white-space:nowrap ;
+    overflow: hidden;
+  }
+  h6{
+    border-right: 2px solid rgba(0, 0, 0, 0.632);
+    display: none;
+  }
+  .animac{
+    animation: pisca 500ms infinito normal ;
+    animation: forma 10s steps(120) normal;
+  }
+
+  section:hover>h6{
+    display: block;
+   
+  }
+  iframe{
+    
+
+    width: 50vw;
+    height: 28vw;
+  }
+  .video{
+    top: 12px;
+    left: 30px;
+    position: relative;
+ 
+ 
+}
+section:active >div.video{
+    display: 
+    flex;
+}
+section:active>h6{
+ display: none;
+
+}
+  
+    
+span{
+    color: #689ADE;
+ }
+}
+span{
+    color: #689ADE;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>ex</span>FATEC</h1>
+        <nav>
+            <ul class="active" >
+                <a href="../index.html" target="_parent">Página Inicial</a>
+                <a href="index2.html" target="_parent">Home</a>
+                <a href="sobre.html" target="_self">Sobre</a>
+                <a href="Duvidas.html" target="_self">Dúvidas</a>
+                <a href="ideias.html" target="_self">Ideias</a>
+                <a href="Contatos.html" target="_self">Contatos</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slides">
+         
+            <input type="radio" name="slide" id="slide5">
+    
+          
+          
+            <div class="slide">
+                <div>
+                    <h2>Ideias:</h2>
+                    <p  >Aqui estão algumas ideias do para o projeto!</p>
+                </div>
+                <div><img src="imagens/sugestão.jpg" alt="the first tree" ></div>
+            </div>
+            <div class="nav">
+              
+                <label  class="bar"for="slide5"></label>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <div  class="h2"> 
+        <h2 id="h2">Ideias para a  extensao</h2>
+    </div>
+    <section class="second">
+        <h6 class="line animac">Volte sempre e traga mais gente!</h6>
+    </section>
+    <aside>
+           
+                <div>
+                    <span>Robótica:</span>
+                                Montar um "carrinho" utilizando
+                                Arduino e ensinar o processo de
+                                montagem para alunos da
+                                FATEC de Carapicuíba durante o
+                                período de um dia.
+                                <span>Reforço em Matemática Básica</span>
+                                Promover um curso presencial na
+                                FATEC de Carapicuíba com duração
+                                de X semanas.
+                </div>
+            <div>
+                <span>Cinema:</span>
+                Conhecer o trabalho de X
+                diretor;
+                Estudar determinado
+                gênero (exs.: Terror,
+                Suspense, Drama etc.)
+            </div>
+            <div>
+                <span>Desenvolvimento de Aplicativo</span>
+                Criar um app que supra alguma
+                necessidade específica e lança-lo
+                para a comunidade.
+            </div>
+            <div>
+                <span>Data Science:</span>
+                Aprender a usar SQL e
+                Power BI para manipular
+                dados.
+            </div>
+            <div>
+                <span>
+                    Idiomas (Inglês, Francês,
+                    Espanhol):
+                </span>
+           
+            Aprender o básico (nível A2)
+            ou intermediário (nível B1)
+            da língua em 6 meses.</div>
+             
+          
+     </aside>
+     <footer>
+        <img src="Imagens/Grupo 4.png" alt="">
+         <div> 
+         </div>
+       
+     </footer>
