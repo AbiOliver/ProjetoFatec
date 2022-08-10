@@ -210,12 +210,14 @@ div.bot{
     position: absolute;
    top: 95px;
    left: 594px;
-    width: 50%;
+   width: 50%;
 
 }
 #imagem img{
     width: 600px;
     height: 500px;
+   
+    
 }
 #ajuste1{
     margin-left: -10px;
@@ -360,6 +362,7 @@ div.texto2{
     background-color:#607980 ;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.316);
     position: relative;
+    clip-path: margin-box;
 }
 
 #h1{
@@ -583,15 +586,13 @@ div.texto2{
 }
 #men2 input:active{
     background-color: #67a6b8;
+    transition: .4S ease-in;
 }
 
 #botaoJ{
     
     background-color: black;
-     border-style: none;
-    font: var(--fnt,var(--font_5));
-    transition: var(--trans2,color .4s ease 0s);
-    color: var(--corvid-color,rgb(var(--txt,var(--color_15))));
+  
     
     white-space: nowrap;
     margin: 0;
@@ -608,7 +609,7 @@ div.texto2{
      text-align: center;
      padding: 15px;
      transition: .6s ease-in-out;
-     font-family: var(--font5);
+     font-family: var(--font1);
      font-size: 1em;
      cursor: pointer;
     
