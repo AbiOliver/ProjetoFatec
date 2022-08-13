@@ -78,7 +78,7 @@
       h2{ 
 
          margin-top: -5px;
-         margin-bottom: 10px;
+         margin-bottom: 5px;
          font-size: 1.5em;
          text-align: left;
          padding-top: 50px;
@@ -151,9 +151,8 @@
   
 }
 input{
-                   
-                        
-                    box-shadow: 1px 1px  1px rgba(0, 0, 0, 0.288);
+   
+                 
                    -webkit-appearance: none;
                    font: var(--fnt,var(--font_8));
                    border-width: var(--corvid-border-width,var(--brw,1px));
@@ -164,15 +163,132 @@ input{
                    border-radius: 2px;
                }
                form input{
+                   
                    margin-top: 10px;
-                   padding: 10px 0px 15px 100px; 
+                   padding: 10px 10px 15px 110px; 
                 
                }
                
                
 
-
-
+               .recuperação{
+                margin-top: 40px;
+                margin-left: 210px;
+                text-transform: uppercase;
+                font-size: small;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.655);
+               }
+               #entrar{
+                border-radius: 3px;
+                text-align: center;
+                padding: 12px;
+                padding-right: 52px;
+                padding-left: 50px;
+               background-color: rgba(0, 0, 0, 0.256);
+               color: rgba(0, 0, 0, 0.256);
+               }
+               #entrar:hover{
+                background-color: rgb(0, 0, 0);
+                color:white;
+                transition: .2s ease;
+                cursor: pointer;
+               }
+               #cad2{
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.605);
+                    font-size: 1em;
+                    font-weight: bolder;
+                    padding-bottom: 30px;
+                    margin-right: 150px;
+                    margin-top: 50px;
+                }
+                #go{
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 4px ;
+                    padding: 10px;
+                    background-color: #F53145;
+                    color: white;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+                #go:hover{
+                    background-color: #f0162b;
+                    transition: 1s   ease;
+                }
+              #face{
+                    margin-left:30px  ;
+                    margin-right:10px  ;
+                    border-radius: 4px ;
+                    background-color: #3D5A99;
+                    border: 1px  solid  #3D5A99 ;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    box-sizing: border-box;
+                    padding-top: 14px;
+                    padding-bottom: 4px;
+                    transition: 1s ease;
+                    
+              }
+              #face:hover{
+                    background-color: #2e519c;
+              }
+              #face img{
+                width: 30px;
+                padding-left: -2px;
+              }
+              #log{
+                display: flex;
+                flex-direction: row;
+                align-items: left;
+                justify-content: left;
+                margin-left:20px;
+              }
+              .termos{
+                font-size: .9em;
+                 margin-top: 31px;
+                 margin-left: 10px;
+              }
+              #termos{
+                font-size: .9em;
+              }
+              #clip{
+                position: absolute;
+                left: 700px;
+                top: 25px;
+                clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+                z-index: -1;
+                margin-right: 50px;
+               
+              }
+              
+              #clip img{
+                width: 100%;
+             
+                
+              }
+              #frase{
+                position: absolute;
+                
+                margin-left: 48px;
+                font-size: 1.05em;
+                text-transform: lowercase;
+              
+              }
+                #img2{
+                    position: absolute;
+                    left: 65%;
+                    top: 34%;
+                    
+                     font-size: 4em;
+                     font-style: oblique;
+                     text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.614);
+                }
+      
+                #cor{
+                    color: #00AEEF;
+                }
     </style>
 </head>
 <body>
@@ -216,9 +332,26 @@ input{
                     </p>
               
             <p>
-                <input type="submit" value="Entrar" >
+                <input type="submit" value="Entrar" id="entrar">
             </p>
          </form>
+         
+         <p id="cad2">Acesse com</p>
+         <div id="log">
+           <p>
+               
+                <a href=""  id="face"><img src="https://mltjbtwhcfxp.i.optimole.com/qkzkEde7FXU/w:1000/h:750/q:auto/https://portal.b2commerce.com.br/wp-content/uploads/2019/01/logo-face.png" alt=""></a>
+           </p>
+             <p ><a href="" id="go">GOOGLE</a></p>
+         </div>
+         <p class="termos">
+           Conheça nossos    <a href="" id="termos">Termos de   uso e  política de privacidade</a >
+        </p>
         </main>
+        
+      <section id="clip">
+        <img src="https://alcantararefrigeracao.com.br/wp-content/uploads/circulo-branco.png" alt="" id="back">
+       </section>
+       <p id="img2">EX<span id="cor">FATEC</span>    </p >
 </body>
 </html>
