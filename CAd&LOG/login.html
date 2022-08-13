@@ -30,13 +30,148 @@
                     height: 1px;
            }
            main{
-            margin-left: -10px;
+            padding-left: 10%;
             width: 50vw;
             background-color: white;
             text-align: left;
-            height: auto;
+            height: 100vh;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.19);
         }
+        span{
+        color: black;
+       }
+       h1{
+        font-size: 2.1em;
+        font-style: inherit;
+        color: #00AEEF;
+        text-align: left;
+        margin-right: 25px;
+        
+      
+         }
+      .flex{
+       
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+           }
+      a{
+        text-align: left;
+        color: red;
+        text-decoration: none;
+        font-size: large;
+        margin-left: 5px;
+        font-weight: bolder;
+        position: relative;
+       
+              }
+      a:hover{
+        text-decoration: underline #00AEEF;
+                     }
+
+      #titulo p{
+        font-size: large;
+       
+              }
+      h2{ 
+
+         margin-top: -5px;
+         margin-bottom: 10px;
+         font-size: 1.5em;
+         text-align: left;
+         padding-top: 50px;
+      }
+      
+
+
+.label-float{
+  position: relative;
+  padding-top: 15px;
+}
+
+.label-float input{
+  
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  outline: none;
+  min-width: 180px;
+  font-size: 20px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  
+  margin-right: 10px;margin-left: 5px;
+  
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+  
+  
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  margin-top: 50px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  color: rgba(0, 0, 0, 0.285);
+
+}
+
+.label-float input:required:invalid + label{
+    
+    
+}
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid #00AEEF;
+ 
+}
+.label-float input:required:invalid + label:after{
+  content: '* ';
+  color: red;
+ 
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #00AEEF;
+  
+}
+input{
+                   
+                        
+                    box-shadow: 1px 1px  1px rgba(0, 0, 0, 0.288);
+                   -webkit-appearance: none;
+                   font: var(--fnt,var(--font_8));
+                   border-width: var(--corvid-border-width,var(--brw,1px));
+                 
+                   background-color: var(--corvid-background-color,rgba(var(--bg,255,255,255),var(--alpha-bg,1)));
+                   color: var(--corvid-color,rgb(var(--txt,var(--color_15))));  
+                   border-color: var(--corvid-border-color,rgba(var(--brd,227,227,227),var(--alpha-brd,1)));
+                   border-radius: 2px;
+               }
+               form input{
+                   margin-top: 10px;
+                   padding: 10px 0px 15px 100px; 
+                
+               }
+               
+               
+
+
 
     </style>
 </head>
@@ -45,15 +180,45 @@
 
     <main class="mae">
             
-        <div id="direito">
-            <div id="titulo">
-                <a href="../index.html">
-                    <h1><span>EX</span>FATEC</h1>
-                </a>
-                <p>Não tem conta? <a href="">Cadastre-se aqui!</a></p>
-            </div>
         
-            <h2>Faça parte da nossa comunidade!</h2>
+            
+                <div id="titulo " class="flex">
+                    <a href="../index.html">
+                        <h1><span>EX</span>FATEC</h1>
+                    </a>
+                    <p>Não tem conta? <a href="Cadastro.html">Cadastre-se aqui!</a></p>
+                </div>
+            
+        
+            <h2>Entre na nossa comunidade!</h2>
+         <form action="" method="post">
+            <div class="tamI tam2">
+                        
+                <p id="cpf">
+                            <div class="label-float">
+                            <input type="text" name="cpf" id="icpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required placeholder=" ">
+                            <label for="icpf">CPF: xxx.xxx.xxx-xx </label>
+                    
+                </p>
+            </div>
+                    <p>
+                        <div class="label-float">
+                          
+                                                <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="6" maxlength="15" placeholder=" ">
+                                                <label for="isenha">Senha </label>
+                                            </p>  
+                        </div>
+            
+                     
+                    </div>
+                    <p class="recuperação" >
+                        Esqueceu sua senha?</a >
+                    </p>
+              
+            <p>
+                <input type="submit" value="Entrar" >
+            </p>
+         </form>
         </main>
 </body>
 </html>
