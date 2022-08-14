@@ -43,7 +43,9 @@ margin: 10px;
 margin-bottom: 10px;
 
 }
-
+button{
+    display: none;
+}
 
 header img{
     
@@ -90,6 +92,9 @@ header nav a::after{
 header nav a:hover::after{
     width: 100%;
 
+}
+header h1{
+    display: none;
 }
 a{
     text-decoration: none;
