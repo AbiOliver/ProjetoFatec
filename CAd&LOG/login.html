@@ -172,14 +172,22 @@ input{
                
 
                .recuperação{
-                margin-top: 40px;
+                margin-top: 30px;
                 margin-left: 210px;
                 text-transform: uppercase;
+               
+               }
+               .recuperação a{
                 font-size: small;
                 font-weight: bold;
                 color: rgba(0, 0, 0, 0.655);
                }
+               .recuperação a:hover{
+               transition: .5s ease-in;
+                color: #00AEEF;
+               }
                #entrar{
+                transition: .5s ease-in;
                 border-radius: 3px;
                 text-align: center;
                 padding: 12px;
@@ -289,6 +297,56 @@ input{
                 #cor{
                     color: #00AEEF;
                 }
+                 
+              .slide{
+               
+               
+              
+                background-position:  center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 512px;
+                height: 512px;
+                transition: .5s;
+              
+              
+               clip-path: circle();
+               clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+
+                animation-name: animate;
+                animation-direction: alternate;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
+                animation-duration: 30s;
+                animation-fill-mode: backwards;
+                animation-iteration-count: infinite;
+              }
+              @keyframes animate{
+                0%{
+                 background-image: url('../imagens/fade1.webp');
+                }
+                18%{
+                  background-image: url('../imagens/fade2.webp');
+                }
+                30%{
+                  background-image: url('../imagens/fade3.webp');
+                }
+                45%{
+                  background-image: url('../imagens/fade4.webp');
+                }
+                65%{
+                  background-image: url('../imagens/fade5.webp');
+                }
+                75%{
+                  background-image: url('../imagens/fade6.webp');
+                }
+                85%{
+                  background-image: url('../imagens/fade7.webp');
+                }
+                100%{
+                  background-image: url('../imagens/fade8.webp');
+                }
+              }
     </style>
 </head>
 <body>
@@ -328,7 +386,7 @@ input{
                      
                     </div>
                     <p class="recuperação" >
-                        Esqueceu sua senha?</a >
+                        <a href="">Esqueceu sua senha?</a></a >
                     </p>
               
             <p>
@@ -350,8 +408,8 @@ input{
         </main>
         
       <section id="clip">
-        <img src="https://alcantararefrigeracao.com.br/wp-content/uploads/circulo-branco.png" alt="" id="back">
-       </section>
-       <p id="img2">EX<span id="cor">FATEC</span>    </p >
+      <div class="slide">
+
+      </div>
 </body>
 </html>

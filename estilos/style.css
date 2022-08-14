@@ -748,8 +748,7 @@ span{
     text-align: center;
     width: 100%;
     margin: 0;
-    height: 0;
-    overflow: hidden;
+  
     transition: all .5s;
 }
 .nav li{
@@ -767,12 +766,10 @@ button{
     margin-top: 17px;
  
 }
-button:focus ~ ul{
-    height: 170px;
-}
+
 
 .nav p{
-   
+    cursor: pointer;
     padding: 10px;
     text-align: center;
 }
@@ -793,3 +790,14 @@ button:focus ~ ul{
  .nav a:after{
      content: none;
  }
+ #esc {
+    border-top: 1px solid rgba(0, 0, 0, 0.223);
+    display:none ;
+   
+ }
+  .p:active ~ #esc{
+    display: block;
+    color: white;
+    
+  }
+

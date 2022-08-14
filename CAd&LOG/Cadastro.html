@@ -320,39 +320,61 @@ select{
                 align-items: center;
                 justify-content: center;
               }
-              #clip{
-                position: absolute;
-                left: 700px;
-                top: 60px;
-                clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
-                z-index: -1;
-                margin-right: 50px;
-               
-                
-              }
-              
-              #clip img{
-                width: 100%;
              
-                
-              }
-              #frase{
+              .slide{
                 position: absolute;
-                top: 45%;
-                margin-left: 48px;
-                font-size: 1.05em;
-                text-transform: lowercase;
+                left: 704px;
+                top: 58px;
               
+                background-position:center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 512px;
+                height: 512px;
+                transition: .5s;
+              
+              
+               clip-path: circle();
+               clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+
+                animation-name: animate;
+                animation-direction: alternate;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
+                animation-duration: 30s;
+                animation-fill-mode: backwards;
+                animation-iteration-count: infinite;
               }
-                #img2{
-                    position: absolute;
-                    left: 65%;
-                    top: 34%;
-                    
-                     font-size: 4em;
-                     font-style: oblique;
-                     text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.614);
+              @keyframes animate{
+                0%{
+                 background-image: url('../imagens/fade1.webp');
                 }
+                18%{
+                  background-image: url('../imagens/fade2.webp');
+                }
+                30%{
+                  background-image: url('../imagens/fade3.webp');
+                }
+                45%{
+                  background-image: url('../imagens/fade4.webp');
+                }
+                65%{
+                  background-image: url('../imagens/fade5.webp');
+                }
+                75%{
+                  background-image: url('../imagens/fade6.webp');
+                }
+                85%{
+                  background-image: url('../imagens/fade7.webp');
+                }
+                100%{
+                  background-image: url('../imagens/fade8.webp');
+                }
+              }
+              .slide img{
+                width: 50%;
+              }
+              
       
                 #cor{
                     color: #00AEEF;
@@ -652,9 +674,10 @@ select{
 
             </div>
         </main>
-      <section id="clip">
-        <img src="https://alcantararefrigeracao.com.br/wp-content/uploads/circulo-branco.png" alt="" id="back">
-       </section>
-       <p id="img2">EX<span id="cor">FATEC</span>    </p >
+      <section class="clip">
+       <div class="slide">
+      
+         
+       </div>
 </body>
 </html>
