@@ -50,7 +50,7 @@ main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  ;
     object-position: 50% 50%;
     
-    width: 275px;
+    width: 500px;
     height: 200px;
  
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);

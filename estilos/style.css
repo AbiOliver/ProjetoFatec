@@ -38,7 +38,7 @@ background-color: #FFFFFF;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: space-around;
+justify-content: space-evenly;
 margin: 10px;
 margin-bottom: 10px;
 
@@ -49,7 +49,7 @@ header img{
     
 
     width: 82px;
-    height: 60px;
+    height: 82px;
     object-fit: contain;
     object-position: center center;
 }
@@ -69,7 +69,7 @@ header nav a{
     text-shadow:  1px 6px 5px rgba(208, 200, 200, 0.977);
     display: flex;
     margin-right: 45px;
-    font-size: 16px;
+    font-size: 17px;
     font-family: var(--font1);
     position: relative;
     text-decoration: none;
