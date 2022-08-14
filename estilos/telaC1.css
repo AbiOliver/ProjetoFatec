@@ -7,40 +7,45 @@
 
 
 header{
-   
-    background-color: whitesmoke;
+  
+    
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
 }
 header img{ 
    display: none;
  
 }
-
-   input::placeholder{
-    font-size: 60%;
-   }
-
-
-nav a::after{
-    content:" ";
-    width: 0%;
-    height: 1px;
-    background-color: black;
-    position: absolute;
-    bottom: 0; 
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.166); 
-    transition: 0.5s ease-in-out;
-    background-color: #00AEEF;
+header nav{
+    margin:  auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
 }
-button:hover, nav a:hover, h4:hover{
-    background-color: rgba(0, 0, 0, 0.104);
+header nav a {
+    color: white;
+    margin: 0px;
+    font-size: 1em;
+    padding: 5px;
+    text-shadow: none;
+    border-top: 1px  solid  white;
 }
-nav a:hover::after{
-width: 100%;
 
+nav li{
+    
+ 
+    margin: 0px;
+    padding: 0;
+   
 }
-a{
-text-decoration: none;
-}
+
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  ;
     object-position: 50% 50%;

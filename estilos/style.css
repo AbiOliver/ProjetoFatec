@@ -727,7 +727,7 @@ span{
     background-color: #607980;
     color: white;
     margin: auto;
-    width: 700px;
+    width: 600px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -778,10 +778,10 @@ span{
     border: none;
     box-shadow: none;
     background-color: none;
-    font-weight:lighter;
+    font-weight:bold;
     margin-left: 70px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .9em;
+    font-size: .7em;
     
 }
  .nav a:after{
