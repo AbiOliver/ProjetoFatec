@@ -4,6 +4,27 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'avenir';
+    src: url('/fonts/Fragmentcore.otf');
+}
+@font-face {
+    font-family: 'rale';
+    src: url('/fonts/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'play';
+    src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+:root{
+    --font1: 'avenir';
+    --font2: 'Helvetica';
+    --font3:'rale' ;
+    --font4: 'play';
+    --font5:'Poppins', sans-serif;
+}
 body{
     width: 56vw;
 }
@@ -51,7 +72,7 @@ header button{
     display: flex;
     font-size: 25px;
 }
-button:hover ~ nav{
+button:focus ~ nav{
     transition: .5s ease-in-out;
     width: auto;
     height: 100px;
