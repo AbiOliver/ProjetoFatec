@@ -16,11 +16,13 @@ header img{
 
 header{
     padding: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin: 0px;
-    background-color: black;
+    background-color: #607980;
     width: 375px;
     border-radius: 10px   10px 0px 0px;
+    
+    box-shadow: 2px 1px 2px rgba(198, 189, 189, 0.758);
 }
 header   nav{
    
@@ -28,8 +30,6 @@ header   nav{
     flex-direction: column  ;
     align-items: center;
     justify-content: center;
-   
-   
     height: 0;
     overflow: hidden;
     
@@ -41,20 +41,23 @@ header h1{
     left: 2px;
     color: white;
     display: flex;
+    font-size: 20px;
 }
 
-button{
+header button{
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     color:white;
     background-color: transparent;
     border: none;
     display: block;
+    font-size: 25px;
 }
 button:focus ~ nav{
     width: auto;
-    height: 120px;overflow: visible;
+    height: 100px;
+    
     
    
 }
@@ -85,12 +88,11 @@ main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  ;
    
     
-    width: 355px;
+    width: 375px;
     height: 200px;
  
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);
-    margin:10px;
-  
+    margin:0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,11 +123,11 @@ div.bot{
     font-family:'play';
     position: relative;
     top: 40px;
-    font-size: 9px;
+    font-size: 10px;
     margin: 10px;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 8px;
     font-family: var(--font4);
     color: #069FF2;
     background-color: white;
@@ -143,8 +145,8 @@ div.bot{
 #deco{
     
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 45px;
+    padding-left: 45px;
     
 
 }
@@ -154,16 +156,15 @@ div.bot{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     position: relative;
     
 }
 .primeiroT{
-    margin-left: 10px;
+    margin-left: 8px;
     margin-top: 10px;
     width: 200px;
     height: 245px;
-   padding-right: 30px;
+    padding-right: 30px;
     text-align:center;
     
     background: transparent;
@@ -182,12 +183,12 @@ h1{
 }
 #para1{
     margin-top: 10px;
-    text-align: left;
+    text-align:center;
     font-size: 11px;
     font-weight:lighter;
     font-family:  'rale';
     line-height: 1.05em;
-    margin-left: 4px;
+    margin-left: 8px;
     width:  130px ;
 
 }
@@ -278,26 +279,26 @@ pointer-events: auto;
     justify-content: center;
 }
 .evento img{
-    width: 80%;
+    width: 340px;
     box-sizing: border-box;
     overflow-x: clip;
-    margin-left: 150px;
+    margin-left: 165px;
 }
 div.texto2{
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
      font-family: var(--font1);
     font-weight: 100;
     align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.189);
     text-align: center;
-    width: 80%;
+    width: 340px;
     padding-bottom:100px ;
     padding-top:20px   ;
     margin-top: -10px;
     border-top: none;
     margin-bottom: 30px;
-    margin-left: 150px;
+    margin-left: 165px;
 }
 #bot2{
     border: 1px solid white;
@@ -315,7 +316,7 @@ div.texto2{
     text-overflow: ellipsis;
     text-align: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.5em;
    
 }
 #bot2:hover{
@@ -327,7 +328,7 @@ div.texto2{
      
 }
 .nav{
-  margin-left: 45px;
+  margin-left: 20px;
     flex-direction: column;
     padding: 0;
     align-items: flex-start;
@@ -335,7 +336,7 @@ div.texto2{
     background-color: #607980;
     color: white;
    
-    width: 290px;
+    width: 340px;
     border-radius: 10px 10px 0px 0px;
 }
 .nav h4{
@@ -360,7 +361,7 @@ div.texto2{
     width: 100%;
     margin: 0;
   
-    transition: all .5s;
+    transition: all .5s ease ;
 }
 .nav li{
     transition: .5s ease;
@@ -404,9 +405,9 @@ div.texto2{
    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.367);
  }
  .form{
-    margin-left: 45px;
+    margin-left: 20px;
     height: 400px;
-    width: 290px;
+    width: 340px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -523,18 +524,19 @@ div.texto2{
 }
 .feed{
     margin-top: -80px;
-    margin-left: 100px;
+    margin-left: 135px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-   position: relative;
+    position: relative;
+    margin-bottom: 10px;
 }
 #feed{
   position: relative;
-  left: 25px;
-  font-size: 1.4em;
+  left: 32px;
+  font-size: 1.1em;
   font-weight: lighter;
 }
 .form2{
@@ -547,11 +549,11 @@ div.texto2{
 #men2{
     
     position: relative;
-      left: 10px;
+      left: 23px;
   }
   #men2 input{
-    width: 150px;
-    padding: 7.5px;
+    width: 240px;
+    padding: 10px;
     font-family: var(--font4);
     border: 1px solid rgba(0, 0, 0, 0.651);
     font-size: .6;
@@ -573,25 +575,16 @@ div.texto2{
      background-color: black;
      color: white;
      text-align: center;
-     padding: 5px;
+     padding: 8px;
      transition: .6s ease-in-out;
      font-family: var(--font1);
-     font-size: .8em;
+     font-size: .6em;
      cursor: pointer;
+     margin-left: 15px;
     
 }
-#botaoJ input:hover{
-    color: black;
-    transform: translate(-2px);
-    background-color: whitesmoke;
-}
-#botaoJ:hover {
-    transition: .2s ease-in;
-    background-color: whitesmoke;
-}
-#botaoJ:hover > input:active{
-  transform: translate(2px);
-}
+
+
 .roda{
     display: flex;
     flex-direction: column;
@@ -601,19 +594,25 @@ div.texto2{
 
 }
 .roda h1{
-    margin-left: 105px;
+    font-size: 25px;
+    margin-top: 10px;
+
+    margin-left: 130px;
     font-style: oblique;
     font-weight: bolder;
     text-shadow:  1px 6px 5px rgba(208, 200, 200, 0.977);
+    margin-left: 110px;
 }
 .roda p{
     text-align: center;
-   
-    padding: 5px;
-    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 6px;
     text-shadow:  1px 6px 5px rgba(208, 200, 200, 0.977);
-    
-    margin-left: 105px;     
+   left: 55px;
+    position: relative;
+       display: none;
 }
 span{
     color: #00AEEF;
@@ -628,3 +627,115 @@ span{
     position: relative;
    
 }
+/* pag "sobreNós"*/
+
+.separar{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  
+    
+    
+   
+}
+
+#imagemS{
+    
+    left: 83px;
+    position: relative;
+    width: 350px;
+    height: 205px;
+   
+    margin: 0;
+    margin-top: -44px;
+    background-position: center bottom;
+}
+.desc{
+     left: 85px;
+     position: relative;
+     top: 08px;
+     width:350px ;
+     height: 305px;
+     background-color: #F1F1F1;
+     padding-left: 80px;
+ }
+ .sobreM{
+   
+     font-size: 10px;
+     font-weight: 100;
+     font-family: var(--font1);
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     width: 205px;
+     
+     margin-left: -10px;
+     
+ }
+ .sobreM h1{
+     font-style: inherit;
+     font-weight: 100;
+     font-family: 'rale';
+     text-align: center;
+     font-size: 13px;
+ }
+ #larg{
+    
+    top: 5px;
+    position: relative;
+    width: 347px;
+    height: 300px;
+    margin: 0 auto; text-align: center;
+    display: block;
+    left: 83px;
+   
+}
+.desc2{
+    top: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.texto3{
+        background-color: #F1F1F1;
+        height: 350px;
+        width: 322px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 25px;
+        margin-left: 193px;
+
+}
+.texto3 h1{
+   font-family: var(--font4);
+   line-height: 1.5em;
+   margin-top: -100px;
+}
+.texto3 p{
+    height: 50px;
+    width: 300px;
+    line-height: 1em;
+    font-size: large;
+    text-align: center;
+    font-family: var(--font1);
+    margin-top: 0;
+    margin-top: -120px;
+}
+
+#direito{
+    background-color: #607980;
+    border-right: 1px solid white;
+    width: 500px;
+}
+#esquerdo{
+    background-color: #E1EFF2;
+}
+
