@@ -556,6 +556,7 @@ div.texto2{
   left: 32px;
   font-size: 1.1em;
   font-weight: lighter;
+  margin-left: 2em;
 }
 .form2{
     display: flex;
@@ -620,6 +621,12 @@ div.texto2{
     font-weight: bolder;
     text-shadow:  1px 6px 5px rgba(208, 200, 200, 0.977);
     margin-left: 110px;
+    
+}
+footer h1
+{
+    margin: auto;
+
 }
 .roda p{
     text-align: center;
@@ -674,23 +681,24 @@ span{
      position: relative;
      top: 08px;
      width:350px ;
-     height: 305px;
+     height: 415px;
      background-color: #F1F1F1;
-     padding-left: 80px;
+     padding-left: 25px;
+
  }
  .sobreM{
    
-     font-size: 10px;
-     font-weight: 100;
+    font-size: large;
+     font-weight: lighter;
      font-family: var(--font1);
      text-align: center;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-around;
-     width: 205px;
-     
-     margin-left: -10px;
+     width: 360px;
+ 
+     margin-left: -30px;
      
  }
  .sobreM h1{
@@ -704,7 +712,7 @@ span{
     
     top: 5px;
     position: relative;
-    width: 347px;
+    width: 350px;
     height: 300px;
     margin: 0 auto; text-align: center;
     display: block;
@@ -723,18 +731,18 @@ span{
 .texto3{
         background-color: #F1F1F1;
         height: 350px;
-        width: 322px;
+        width: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        margin: 25px;
-        margin-left: 193px;
-
+        margin: 10px;
+        margin-left: 175px;
+        margin-top: 0;
 }
 .texto3 h1{
    font-family: var(--font4);
-   line-height: 1.5em;
+   line-height: 1em;
    margin-top: -100px;
 }
 .texto3 p{
@@ -744,7 +752,7 @@ span{
     font-size: large;
     text-align: center;
     font-family: var(--font1);
-    margin-top: 0;
+    margin-top: -20px;
     margin-top: -120px;
 }
 
@@ -756,4 +764,5 @@ span{
 #esquerdo{
     background-color: #E1EFF2;
 }
+
 
