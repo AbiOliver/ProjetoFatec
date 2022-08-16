@@ -754,6 +754,7 @@ span{
     font-family: var(--font1);
     margin-top: -20px;
     margin-top: -120px;
+    font-weight: lighter;
 }
 
 #direito{
