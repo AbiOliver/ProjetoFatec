@@ -46,35 +46,36 @@
         color: #00AEEF;
         text-align: left;
         margin-right: 25px;
-        
+        margin-left: -6.7em;
       
          }
-      .flex{
+         .flex{
        
-        padding-top: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-           }
-      a{
-        text-align: left;
-        color: red;
-        text-decoration: none;
-        font-size: large;
-        margin-left: 5px;
-        font-weight: bolder;
-        position: relative;
-       
-              }
-      a:hover{
-        text-decoration: underline #00AEEF;
-                     }
+       padding-top: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: left;
+       gap: 10px;
+          }
+          .flex p{
+            margin-left: -15.7em;
+          }
+     a{
+       text-align: left;
+       color: red;
+       text-decoration: none;
+       font-size: large;
+       margin-left: 5px;
+       font-weight: bolder;
+       position: relative;
+      
+             }
+     a:hover{
+       text-decoration: underline #00AEEF;
+                    }
 
-      #titulo p{
-        font-size: large;
-       
-              }
+     
       h2{ 
 
          margin-top: -5px;
@@ -82,6 +83,7 @@
          font-size: 1.5em;
          text-align: left;
          padding-top: 50px;
+         margin-left: .2em;
       }
       
 
@@ -347,47 +349,67 @@ input{
                   background-image: url('../imagens/fade8.webp');
                 }
               }
-              @media(min-width: 320px) and (max-width: 745px){
 
- 
+
+                       /* page para  cel*/
+        @media(min-width: 320px) and (max-width: 745px){
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+ body{
+  width: 98vw;
+  height: 100vh;
+ background-color: white;
 }
 
 main{
     padding: 0px;
     margin-left: -10px;
     margin-top: -25px;
-    width: 102.7vw;
+    width: 102.75vw;
+    height: 103.4vh;
     background-color: white;
     text-align: center;
-    height: 100vh;
+  
     margin-bottom: -15px;
     
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.19);
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-style: inherit;
     color: #00AEEF;
     text-align: left;
-    margin-left: 110px;
-    margin-top: 30px;
+    margin-left: 50px;
+    margin-top: 0;
     margin-bottom: 0px;
 }
-#titulo{
-        margin-left: -100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 9px;
-        padding-top: 1px;
-        text-align: left;
+.flex{
        
-      }
+       padding-top: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: left;
+       gap: 10px;
+          }
+     a{
+       text-align: left;
+       color: red;
+       text-decoration: none;
+       font-size: large;
+       margin-left: 5px;
+       font-weight: bolder;
+       position: relative;
+      
+             }
+     a:hover{
+       text-decoration: underline #00AEEF;
+                    }
+
+     
       select option:nth-child(even){
         background-color: rgba(0, 166, 255, 0.123)
       }
@@ -396,63 +418,22 @@ h1 {
         color: black;
       }
      
-      #titulo a{
-        text-align: left;
-        color: red;
-        text-decoration: none;
-        font-size: large;
-        margin-left: 5px;
-        font-weight: bolder;
-        position: relative;
-      }
-      #titulo a:hover{
-        text-decoration: underline #00AEEF;
-      }
-
-      #titulo p{
-        font-size: large;
-        margin-top: 6px;
-        font-size: .9em;
-        margin: auto;
-        margin-right: 100px;
-      }
       h2{ 
-
-         margin-top: 15px;
-         margin-bottom:20px;
-         font-size: 1em;
+         margin-top: 25px;
+         margin-bottom:40px;
+         font-size: 1.2em;
          text-align: left;
-         margin-left: 80px;
+         margin-left: 75px;
         
       }
-      form select {
-    padding:  5px;
-}
+ 
 
-  select {
-    border-radius: 5px;
-    box-sizing: border-box;
-    width: 10em;
-    left: 10px;
-    top: -15px;
-    position: relative;
-    bottom: -15px;
-}
-#email input {
-    padding-right: 280px;
-    margin-left: -5px;
-    margin-top: 2px;
-    width: 19em;
-    height: 1em;
-    padding: 17px;
-    margin-left: 12px;
-}
 form input {
-    padding: 7px;
+    padding: 15px;
     margin-bottom: 10px;
     margin-top: 0px;
     margin-left: 210px;
-    width: 3em;
+    width: 18em;
 }
 
 .slide {
@@ -498,7 +479,7 @@ form input {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     outline: none;
-    min-width: 158px;
+    min-width: 188px;
     font-size: 18px;
     transition: all .3s ease-out;
     -webkit-transition: all .3s ease-out;
@@ -511,40 +492,69 @@ form input {
   pointer-events: none;
   position: absolute;
   top: 0;
-  left: 20px;
-  margin-top: 30px;
+  left: 55px;
+  margin-top: 35px;
   transition: all .3s ease-out;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   color: rgba(0, 0, 0, 0.285);
 
 }
-#ra{
-                    margin-top: -40px;
-                    margin-bottom: 25px;
-                }
-                #ra input{
-                  width: 19em;
-                  padding-right: 25px;
-                  margin-left: 5px;
-                  margin-bottom: 15px;
-                  margin-top: 0px;
-                  padding: 7px;
-                }
-                .termos {
-    margin-top: 45px;
-    margin-left: 13px;
-    font-size: .75em;
-}
+
 #cad2 {
     text-align: center;
     color: rgba(0, 0, 0, 0.449);
     font-size: 1em;
     font-weight: bolder;
-    margin-top: 15px;
+   
     margin-bottom: 20px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: .2em;
 }
-
+.recuperação a {
+    font-size: small;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.655);
+    margin-right: 20px;
+    position: relative;
+  top: -1.5em;
+}
+#entrar{
+                transition: .5s ease-in;
+                border-radius: 3px;
+                text-align: center;
+                padding: 10px;
+                padding-right: 0px;
+                padding-left: 0px;
+               background-color: rgba(0, 0, 0, 0.256);
+               color: rgba(0, 0, 0, 0.256);
+               margin: 0;
+               }
+               #entrar:hover{
+                background-color: rgb(0, 0, 0);
+                color:white;
+                transition: .2s ease;
+                cursor: pointer;
+               }
+               #face {
+    margin-left: 55px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #3D5A99;
+    border: 1px solid #3D5A99;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 4px;
+    transition: 1s ease;
+}
+.termos {
+    font-size: .95em;
+    margin-top: 4em;
+    margin-left: 10px;
+}
 }
     </style>
 </head>

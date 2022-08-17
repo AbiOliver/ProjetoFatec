@@ -89,11 +89,11 @@ button:hover{
 }
 header nav a {
    
-    font-size:.7em;
+    font-size:.6em;
      color: white;
     text-shadow: none;
     margin: 0;
-    margin: .6em;
+    margin: 1   em;
 }
 header  nav li{
     
