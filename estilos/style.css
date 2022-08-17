@@ -762,21 +762,26 @@ span{
     list-style-type: none;
 }
 .nav li{
+  
     transition: .5s ease;
     width: 100%;
     border-top: 1px solid white;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 .nav p{
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+    font-weight: bold;
    
 }
 .nav a{
-  
+
+    font-family: 'rale';
     text-decoration: none;
     color: white;
     text-align: center;
@@ -784,10 +789,10 @@ span{
     border: none;
     box-shadow: none;
     background-color: none;
-    font-weight:bold;
-    margin-left: 70px;
+    font-weight: lighter;
+    margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .7em;
+    font-size: 16px;
     
 }
  .nav a:after{
