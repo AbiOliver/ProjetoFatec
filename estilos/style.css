@@ -480,7 +480,7 @@ div.texto2{
 }
 
 .dividir{
-
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -535,12 +535,14 @@ div.texto2{
   left: 110px;
   font-size: 2.5em;
   font-weight: lighter;
+  margin-top: -30px;
 }
 .form2{
     display: flex;
     gap: 5px;
     padding: 10px;
     margin-left: 15px;
+    
     
 }
 #men2{
@@ -629,6 +631,16 @@ span{
     top: 50px;
     position: relative;
    
+}
+.contatos{
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: -30px;
+    
 }
 
 #imagemS{

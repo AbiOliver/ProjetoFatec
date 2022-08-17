@@ -93,7 +93,7 @@ header nav a {
      color: white;
     text-shadow: none;
     margin: 0;
-    margin: 1   em;
+    margin: 1em;
 }
 header  nav li{
     
@@ -540,7 +540,7 @@ div.texto2{
  
 }
 .feed{
-    margin-top: -80px;
+    margin-top: -65px;
     margin-left: 135px;
     display: flex;
     flex-direction: column;
@@ -555,7 +555,8 @@ div.texto2{
   left: 32px;
   font-size: 1.1em;
   font-weight: lighter;
-  margin-left: 2em;
+  margin-left: 2.4em;
+  
 }
 .form2{
     display: flex;
@@ -602,6 +603,21 @@ div.texto2{
     
 }
 
+.contatos{
+   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 1.5em;
+    width: 300px;
+}
+.contatos h1{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-weight: lighter    ;
+}
 
 .roda{
     display: flex;
