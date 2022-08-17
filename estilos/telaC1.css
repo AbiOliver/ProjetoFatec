@@ -94,6 +94,7 @@ header nav a {
     text-shadow: none;
     margin: 0;
     margin: 1em;
+    font-variant: small-caps;
 }
 header  nav li{
     
@@ -616,7 +617,11 @@ div.texto2{
 .contatos h1{
     font-size: 1.5em;
     margin-bottom: 5px;
-  
+    font-weight: lighter;
+}
+.contatos p{
+    font-weight: lighter;
+    font-family: 'rale';
 }
 
 .roda{
