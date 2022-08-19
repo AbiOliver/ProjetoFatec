@@ -7,21 +7,19 @@
     font-family: 'avenir';
     src: url('/fonts/Fragmentcore.otf');
 }
-@font-face {
-    font-family: 'rale';
-    src: url('/fonts/Raleway-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
 @font-face {
     font-family: 'play';
     src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 :root{
     --font1: 'avenir';
     --font2: 'Helvetica';
-    --font3:'rale' ;
-    --font4: 'play';
-    --font5:'Poppins', sans-serif;
+    --font3:'raleway' ;
+    --font4: 'Lato', sans-serif;
+    --font5: 'play';
 }
 
 html{
@@ -39,12 +37,21 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
-margin: 10px;
-margin-bottom: 10px;
 
+
+
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+position: sticky;
+z-index:  2;
+top: 0; 
+left: 0;
+width: 100%;
 }
+
 button{
     display: none;
+  
+
 }
 
 header img{
@@ -58,34 +65,29 @@ header img{
 img:hover{
     transition: 1s;
 }
-
  header > nav li{
     list-style-type: none;
     display: flex;
 }
 header nav{
-   display: flex;
-   
+   display: flex; 
 }
 header nav a{
-    text-shadow:  1px 6px 5px rgba(208, 200, 200, 0.977);
     display: flex;
-    margin-right: 45px;
+    margin-right:45px;
     font-size: 17px;
-    font-family: var(--font1);
+    font-family: var(--font4);
     position: relative;
     text-decoration: none;
     color: black;
-    
+    font-weight: lighter;
 }
 header nav a::after{
             content:" ";
             width: 0%;
             height: 1px;
-            background-color: black;
             position: absolute;
             bottom: 0; 
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.166); 
             transition: 0.3s ease-in-out;
             background-color: #00AEEF;
 }
@@ -101,10 +103,10 @@ a{
 }
 
 main > div.primeira{
-    background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  ;
+    background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  fixed ;
     object-position: 50% 50%;
     
-    width: 1120px;
+    width: 98.7vw;
     height: 740px;
     object-fit: cover;
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);
@@ -116,14 +118,13 @@ main > div.primeira{
     justify-content: space-around;
 }
 #primeiraH{
-     margin-top: -70px;
+    margin-top: -70px;
     font-family: 'Helvetica' ;
     font-weight: lighter;
     font-variant: inherit;
     color: white;
     text-align: center;
     font-size: 50px;
- 
 }
 #primeiroP{
     margin-top: -18px;
@@ -144,6 +145,7 @@ div.bot{
    
 }
 .deco{
+    
     font-family:'play';
     position: relative;
     top: 50px;
@@ -153,15 +155,15 @@ div.bot{
     border-radius: 20px;
     padding: 15px;
     font-family: var(--font4);
-    color: #069FF2;
-    background-color: white;
+    color: white;
+    background-color: #607980;
     
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.038);
 }
 .deco:hover{
     
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.626);
-    background-color: rgba(93, 155, 212, 0.566);
+    background-color: #485a5f;
   
      transition: .8s;
      left: -.7px;
@@ -199,19 +201,19 @@ div.bot{
    
    
     margin-top: 90px;
-    padding: 10px;
+    padding: 9px;
     font-size: 35px;
     font-weight: lighter;
-    font-family: 'rale';
+    font-family: var(--font4);
     line-height: 50px;
 }
 #para1{
     text-align: justify;
     font-size: 17px;
     font-weight:lighter;
-    font-family:  'rale';
+    font-family:  'lato';
     line-height: 1.5em;
-    margin-left: 40px;
+    margin-left: 50px;
     width:  400px ;
 }
 
@@ -257,49 +259,61 @@ div.bot{
     gap: 40px;
     margin-top: 50px;
 }
+
 .objectiveP img{
     width: 350px;
-    height: 300px;
-   
+    height: 400px;
+    transition: .5;
    
 }
+
+.objectiveP img:hover ~ .textoOB{
+    opacity: .8;
+}
+.objectiveP img:hover {
+    opacity: .6;
+    background-color: #dce9eb;
+    transition: .5;
+}
+.textoOB:hover  {
+    opacity:100%;
+    transition: .5;
+}
+
 .textoOB{
 text-align: center;
-color: white;
-background-color: black;
-margin-top: -5px;
-vertical-align: middle;
+color: azure;
+opacity: 0;
+margin-top: -250px;
+
 height: 200px;
+transition: 0.5s;
+text-align: center;
 
 font-weight: lighter;
 font-style: inherit;
 pointer-events: auto;
 }
 .textoOB h3{
-    padding-top: 50px;
+    padding-top: 10px;
     font-family: 'rale';
-    font-size: 25px;
+    font-size: 3rem;
     font-family: var(--font4);
     font-weight:100 ;
+    margin-bottom: 40px;  
+    
+   
 }
 .textoOB p{
     padding-top: 5px;
-    font-family: var(--font1);
-    font-size: 15px;
+    font-family: var(--font3);
+    font-size: 1.5rem;
     font-weight: 300;
-}
-.cor1{
-  
-    background-color: #607980;
-}
-.cor2{
-    background-color: #67a6b8;
-}
-.cor3{
-    background-color: #b7e5f0;
+ 
+ 
 }
 .evento{
-    
+   
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -310,22 +324,26 @@ pointer-events: auto;
     width: 38%;
     box-sizing: border-box;
     overflow-x: clip;
-    
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.258);
+    border-radius: 5px 5px 0 0 ;
 }
 div.texto2{
-    
+    z-index: 1;
     font-size: 15px;
      font-family: var(--font1);
     font-weight: 100;
     align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.189);
     text-align: center;
-   width: 38%;
+    width: 36%;
     padding-bottom:100px ;
     padding-top:-10px   ;
-    margin-top: -10px;
-    border-top: none;
+    margin-top: -100px;
+    border-radius: 5px 5px ;
     margin-bottom: 50px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.512);
 }
 #bot2{
     border: 1px solid white;
@@ -664,7 +682,8 @@ span{
   
     font-size: 20px;
     font-weight: 100;
-    font-family: var(--font1);
+    font-family: 'lato';
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -677,7 +696,8 @@ span{
 .sobreM h1{
     font-style: inherit;
     font-weight: 100;
-    font-family: 'rale';
+    font-family: 'lato';
+
     text-align: center;
     font-size: 50px;
 }
@@ -745,7 +765,7 @@ span{
     color: white;
     margin: auto;
     width: 600px;
-    border-radius: 10px 10px 0px 0px;
+   
 }
 
 .nav h4{
@@ -755,14 +775,12 @@ span{
  margin-left: 165px;
  font-size: 1.7em;
  transition: .5s ease;
- 
-}
-.nav h4:hover{
-    color: #67a6b8;
+ font-family: var(--font4);
 }
 
+
  .nav li:hover, .nav button:hover{
-    background-color: black;
+    background-color: #2e3e42;
     transition: .5s ease;
 }
 .nav ul{
@@ -778,8 +796,8 @@ span{
     transition: .5s ease;
     width: 100%;
     border-top: 1px solid white;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: var(--font4);
 }
 
 
@@ -788,12 +806,10 @@ span{
     cursor: pointer;
     padding: 5px;
     text-align: center;
-    font-weight: bold;
+    font-family: var(--font4);
    
 }
 .nav a{
-
-    font-family: 'rale';
     text-decoration: none;
     color: white;
     text-align: center;
@@ -803,7 +819,7 @@ span{
     background-color: none;
     font-weight: lighter;
     margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font3);
     font-size: 16px;
     
 }
@@ -817,9 +833,9 @@ span{
  }
   .p:active ~ #esc{
     display:block;
-    color: black;
+   color: black;
     background-color: white;
-    border: .5px solid black;
+   
     text-align: center;
     transition: .3s ease-in-out;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.367);
