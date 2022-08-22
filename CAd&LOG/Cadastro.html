@@ -16,8 +16,9 @@
         @font-face {
     font-family: 'avenir';
     src: url('/fonts/Fragmentcore.otf');
+    
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
    
         
        select::-webkit-scrollbar {
@@ -131,36 +132,33 @@ select{
         font-style: inherit;
         color: #00AEEF;
         text-align: left;
-        margin-right: 25px;
+        margin: auto;
+        margin-left: 130px;
         
         
       }
-      #titulo a{
-        text-align: left;
-        color: red;
-        text-decoration: none;
-        font-size: large;
-        margin-left: 5px;
-        font-weight: bolder;
-        position: relative;
-      }
-      #titulo a:hover{
-        text-decoration: underline #00AEEF;
-      }
+    
+      
 
       #titulo p{
         font-size: large;
       
       }
+      #titulo a{
+        text-decoration: none;
+      }
+     
       h2{ 
 
-         margin-top: -5px;
+         margin-top: 10px;
          margin-bottom: -10px;
-         font-size: 1.5em;
+         font-size: 1.3em;
          text-align: left;
-         margin-left: 50px;
+         margin-left: 190px;
         
+        font-weight: lighter;
       }
+      
       form{
       
         display: flex;
@@ -194,17 +192,15 @@ select{
                     padding: 10px 0px ;
                 }
                 .tamI{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center; 
-                margin-bottom: 30px;
-                margin-right: 10px;
-                
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center; 
+                      margin-bottom: 30px;
+                      margin-right: 10px;   
                 }
                 #ra{
-                    margin-top: -27px;
-                    
+                    margin-top: -27px;  
                 }
                 #ra input{
                     padding-right: 277px;
@@ -250,23 +246,28 @@ select{
                     padding-right:20px;
                    
                 }
-                #cad{
+                .cad{
                   
-                   border-radius: 15px;
-                   text-align: center;
-                   color: white;
-                   vertical-align: super;
-                   font-size: 1.5em;
-                   font-weight: lighter;
-                   padding-bottom: 17px;
-                   padding-right: 155px;
-                   margin-right: 280px;
-                   cursor: pointer;
-                   font-family: Georgia, 'Times New Roman', Times, serif;
-                   background-color: rgba(0, 0, 0, 0.312);
-                  
+                    background-color: rgba(0, 0, 0, 0.312);
+                   
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    cursor: pointer;
+                    color: white;
+                    
+                    margin-right: 10px;
+                    vertical-align: super;
+                    font-size: 1em;
+                    font-weight: lighter;
+                    padding: 25px ;
+                    padding-bottom: 17px;
+                    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+                   text-decoration: none; 
+                   margin: 10px;
+                   
+                         
                 }
-                #cad:hover{
+               
+                .cad:hover{
                    
                     transition: .1s ease;
                     transform: translate(3px);
@@ -591,23 +592,30 @@ form input {
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
 }
-#cad {
-    border-radius: 15px;
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    font-size: .85em;
-    font-weight: lighter;
-    padding-bottom: 15px;
-    padding-right:80px ;
-    
+.cad {
    
-    margin: auto;
-    margin-top: 2em;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(0, 0, 0, 0.312);
+  background-color: rgba(0, 0, 0, 0.312);
+                   
+                   font-family: Georgia, 'Times New Roman', Times, serif;
+                   cursor: pointer;
+                   color: white;
+                   
+                   margin-right: 10px;
+                   vertical-align: super;
+                   font-size: 1em;
+                   font-weight: lighter;
+                   padding: 25px ;
+                   padding-bottom: 17px;
+                   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+                  text-decoration: none; 
+                   margin: 10px;
+                   padding-right: 100px;
 }
+.entre{
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
 .label-float input {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
@@ -666,6 +674,15 @@ form input {
 
 
 }
+.botao{
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+
     </style>
 </head>
 <body>
@@ -679,7 +696,7 @@ form input {
                     <a href="../index.html">
                         <h1><span>EX</span>FATEC</h1>
                     </a>
-                    <p>Já tem conta? <a href="login.html  ">Entre agora!</a></p>
+                    
                 </div>
             
                 <h2>Faça parte da nossa comunidade!</h2>
@@ -867,14 +884,20 @@ form input {
                             Ao me cadastrar, concordo com os <a href="" id="termos">Termos de   uso e  política de privacidade</a >
                         </p>
                   
-                <p>
-                    <input type="submit" value="criar conta" id="cad">
-                </p>
+                <div class="botao">
+                  <p>
+                      <input type="submit" value="criar conta" class="cad">
+                  
+                  </p>
+                 <a href="login.html  "  class="cad entre">Entre aqui!</a>
+                </div>
+
                              </form>
                             
                              <p id="cad2">Cadastre-se com</p>
                             <div id="log">
                               <p>
+                               
                                   
                                    <a href=""  id="face"><img src="https://mltjbtwhcfxp.i.optimole.com/qkzkEde7FXU/w:1000/h:750/q:auto/https://portal.b2commerce.com.br/wp-content/uploads/2019/01/logo-face.png" alt=""></a>
                               </p>
