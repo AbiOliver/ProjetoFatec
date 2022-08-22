@@ -100,6 +100,9 @@ header nav a {
     margin: 1em;
     font-variant: small-caps;
 }
+a{
+    color: white;
+}
 header  nav li{
     
     display: flex;
