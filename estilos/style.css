@@ -99,6 +99,7 @@ header h1{
     display: none;
 }
 a{
+    color: white;
     text-decoration: none;
 }
 
@@ -203,7 +204,7 @@ div.bot{
     margin-top: 90px;
     padding: 9px;
     font-size: 35px;
-    font-weight: lighter;
+   
     font-family: var(--font4);
     line-height: 50px;
 }
@@ -395,7 +396,7 @@ div.texto2{
     margin-bottom: 0px;
     border-bottom: 1px solid;
     box-shadow:  2px 2px 3px black;
-    font-family: var(--font5);
+    font-family: var(--font3);
 }
 #h1:hover{
     
@@ -417,7 +418,7 @@ div.texto2{
     gap: 32px;
     padding: 50px;
     margin: 100px;
-    
+    font-family: var(--font3);
 }
 
 .input input{
@@ -541,11 +542,10 @@ cursor:progress;
     font-weight: bolder;
     text-align: center;
     font-size: 2em;
-    font-weight: 300; 
-    font-style: oblique;
+    
     display: flex;
     color: white;
- 
+  font-family: var(--font4);
 }
 #Fh1{
     position: relative;

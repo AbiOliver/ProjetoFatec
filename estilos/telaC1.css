@@ -657,14 +657,14 @@ div.texto2{
     padding: 10px;
 }
 .feed h1{
-   text-decoration: underline rgba(255, 255, 255, 0.155);
+   
     font-weight: bolder;
     text-align: center;
     font-size: 1em;
     font-weight: 300; 
     font-style: oblique;
     display: flex;
-    color: rgba(255, 255, 255, 0.716);
+    color: rgba(255, 255, 255, 0.597);
     
 }
 #Fh1{
@@ -726,7 +726,7 @@ div.texto2{
      transition: .6s ease-in-out;
      font-family: var(--font1);
      font-size: .5em;
-    padding-right: 5px;
+     padding-right: 5px;
     
 }
 #botaoJ input:hover{
@@ -746,7 +746,7 @@ footer{
     padding: 1px;
     font-family: var(--font4);
     background-color:#485a5f;
-    color: rgba(255, 255, 255, 0.704);
+    color: rgba(255, 255, 255, 0.568);
     width: 100vw;
 }
 
