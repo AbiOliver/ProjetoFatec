@@ -111,11 +111,8 @@ header  nav li{
 }
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat center right / cover fixed ;
-   
-    
     width: 375px;
     height: 200px;
- 
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);
     margin:0px;
     display: flex;
@@ -213,19 +210,16 @@ h1{
     text-align:center;
     font-size: 11px;
     font-weight:lighter;
-   
     line-height: 1.05em;
     margin-left: 10px;
     width:  130px ;
     font-family: var(--font4);
 }
 #imagem{
-   
     position: relative;
-   top: 8px;
-   left: -161px;
-   width: 100%;
-
+    top: 8px;
+    left: -161px;
+    width: 100%;
 }
 #imagem img{
     width: 178px;
@@ -235,7 +229,7 @@ h1{
     
 }
 #ajuste1{
-   margin: 0 auto;
+    margin: 0 auto;
     margin-left: 133px;
     margin-top: 30px;
     text-align: center;
@@ -261,8 +255,6 @@ h1{
     width: 115px;
     height: 115px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
-   
-   
 }
 .objectiveP img:hover ~ .textoOB{
     opacity: 1;
@@ -276,7 +268,7 @@ h1{
     
 }
 .textoOB{
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.437);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.437);
 text-align: center;
 color: white;
 background-color: black;
@@ -306,7 +298,6 @@ border-radius: 5px;
     font-weight: 300;
 }
 #cor1{
-  
     background-color: #67a6b8;
 }
 #cor2{
@@ -316,7 +307,6 @@ border-radius: 5px;
     background-color: #67a6b8;
 }
 .evento{
-    
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -332,7 +322,7 @@ border-radius: 5px;
 div.texto2{
     text-align: center;
     font-size: 15px;
-     font-family: var(--font1);
+    font-family: var(--font1);
     font-weight: 100;
     align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.189);
@@ -366,8 +356,6 @@ div.texto2{
 }
 #bot2:hover{
      border-bottom: 2px solid black;
-     border-radius: 10px;
-     transform: translate(-2px, -2px);
      transition: 1s;
      color: #607980;
      
@@ -388,7 +376,6 @@ div.texto2{
     flex-direction: row;
     padding: 10px;
     margin: 0px;
-    
     font-size: 1.5em;
     transition: .5s ease;
     margin-left: 60px;
@@ -396,7 +383,6 @@ div.texto2{
    .nav h4:hover{
     color: #67a6b8;
 }
-
  .nav li:hover, .nav button:hover{
     background-color: black;
     transition: .5s ease;
@@ -406,7 +392,6 @@ div.texto2{
     text-align: center;
     width: 100%;
     margin: 0;
-  
     transition: all .5s ease ;
 }
 .nav li{
@@ -554,14 +539,9 @@ div.texto2{
 #enviar:active{
     cursor: progress;
 }
-
-
 .contato{
    overflow: hidden;
     display: none;
-    
-
- 
 }
 .feed{
     margin-top: -65px;
@@ -664,7 +644,7 @@ div.texto2{
     font-weight: 300; 
     font-style: oblique;
     display: flex;
-    color: rgba(255, 255, 255, 0.597);
+    color: rgb(255, 255, 255);
     
 }
 #Fh1{
@@ -746,7 +726,7 @@ footer{
     padding: 1px;
     font-family: var(--font4);
     background-color:#485a5f;
-    color: rgba(255, 255, 255, 0.568);
+    color: rgb(255, 255, 255);
     width: 100vw;
 }
 
