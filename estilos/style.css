@@ -26,11 +26,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-
     width: 100%;
     margin: 0;
 }
-
 header{
 background-color: #FFFFFF;
 display: flex;
@@ -98,12 +96,10 @@ a{
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat left center / cover  fixed ;
     object-position: 50% 50%;
-    
     width: 98.7vw;
     height: 740px;
     object-fit: cover;
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);
-  
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -134,7 +130,6 @@ div.bot{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
    
 }
 .deco{

@@ -94,15 +94,13 @@ button:hover{
 header nav a {
     font-family: var(--font4);
     font-size:.5em;
-     color: white;
+     color: #FFFFFF;
     text-shadow: none;
     margin: 0;
     margin: 1em;
-    font-variant: small-caps;
+  
 }
-a{
-    color: white;
-}
+
 header  nav li{
     
     display: flex;
