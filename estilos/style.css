@@ -398,14 +398,13 @@ div.texto2{
     box-shadow:  2px 2px 3px black;
     font-family: var(--font3);
 }
+
 #h1:hover{
     
     background-color: #67a6b8;
      
   
 }
-
-
 
 .form{
     height: 600px;
@@ -422,17 +421,9 @@ div.texto2{
 }
 
 .input input{
-   
-  
     border: none ;
-   
-   
     border-style:1px  solid;
-
-   
     font: var(--fnt,var(--font_8));
-    
-   
     border-radius: var(--corvid-border-radius,var(--rd,0));
     background-color: var(--corvid-background-color,rgba(var(--bg,255,255,255),var(--alpha-bg,1)));
     border-color: var(--corvid-border-color,rgba(var(--brd,227,227,227),var(--alpha-brd,1)));
@@ -440,33 +431,26 @@ div.texto2{
     box-sizing: border-box!important;
     border-style: solid;
     padding: var(--textPadding);
-    
     max-width: 100%;
     border-bottom: 1px solid black;
-   
     min-height: var(--inputHeight);
     background-color: #DCE9EB;
     width: 100%;
     padding: 10px;
     vertical-align: baseline;
-    
     font-family: var(--font1);
     margin-top: 8px;
     box-shadow: 1px 1px  1px rgba(0, 0, 0, 0.612);
 }
-   
-
 .input input:hover{
     border: 1px solid black;
     box-shadow: 1px 1px  5px rgba(0, 0, 0, 0.612);
-   
 }
 .area{
     box-shadow: var(--shd,0 0 0 transparent);
     box-shadow: 1px 1px  1px rgba(0, 0, 0, 0.612);
     -webkit-appearance: none;
     box-shadow: var(--shd,0 0 0 transparent);
-    
     font: var(--fnt,var(--font_8));
     border-width: var(--corvid-border-width,var(--brw,1px));
     resize: none;
@@ -486,20 +470,15 @@ div.texto2{
     background-color: #DCE9EB;
     border-bottom: 1px solid black;
     font-family: var(--font1);
-    
-  
 }
 .area:hover{
     box-shadow:inset  1px 1px  5px rgba(0, 0, 0, 0.612);
 }
-
 .dividir{
- 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  
 }
 #enviar{
     margin-top: 30px;
@@ -542,10 +521,9 @@ cursor:progress;
     font-weight: bolder;
     text-align: center;
     font-size: 2em;
-    
     display: flex;
     color: white;
-  font-family: var(--font4);
+    font-family: var(--font4);
 }
 #Fh1{
     position: relative;
@@ -560,7 +538,6 @@ cursor:progress;
   margin-top: -30px;
   color: #DCE9EB;
   display: none;
- 
 }
 .form2{
     display: flex;
@@ -583,7 +560,6 @@ cursor:progress;
     background-color: #67a6b8;
     transition: .4S ease-in;
 }
-
 #botaoJ{  
     background-color: black;
     white-space: nowrap;
@@ -602,7 +578,6 @@ cursor:progress;
      font-family: var(--font1);
      font-size: .9em;
      cursor: pointer;
-    
 }
 #botaoJ input:hover{
     color: black;
@@ -623,18 +598,13 @@ footer{
     background-color:#485a5f;
     color: rgba(255, 255, 255, 0.704);
 }
-
-
-
 .separar{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  
     top: 50px;
     position: relative;
-   
 }
 .contatos{
     margin: auto;
@@ -644,12 +614,11 @@ footer{
     justify-content: center;
     margin-top: -50px;
     margin-bottom: -30px;
-    
 }
 
 #imagemS{
     right: 50px;
-  position: relative;
+    position: relative;
     width: 500px;
     height: 700px;
     object-fit: cover;
@@ -662,14 +631,11 @@ footer{
     width:500px ;
     height: 700px;
     background-color: #F1F1F1;
-    
 }
-.sobreM{
-  
+.sobreM{ 
     font-size: 20px;
     font-weight: 100;
     font-family: 'lato';
-
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -785,15 +751,11 @@ footer{
 
     font-family: var(--font4);
 }
-
-
-
 .nav p{
     cursor: pointer;
     padding: 5px;
     text-align: center;
     font-family: var(--font4);
-   
 }
 .nav a{
     text-decoration: none;
