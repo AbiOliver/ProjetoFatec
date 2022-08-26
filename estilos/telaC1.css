@@ -75,11 +75,13 @@ header  menu{
     display: none;
     width: 100vw;
     margin: 0 auto;
+    color: white;
 }
 
 menu li{
     border-top: 2px solid white;
     background-color: #4d5c60;
+    color: white;
 }
 menu > li > a{
     
