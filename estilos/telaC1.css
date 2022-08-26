@@ -57,7 +57,7 @@ header h1{
 }
 span#burguer{
     background-color: #4d5c60;
-    display: block;
+    display:block;
     color: white;
     text-align: center;
     padding: 10px;
@@ -65,10 +65,11 @@ span#burguer{
     font-size: 36px;
 }
 span#burguer:hover{
-    background-color: white;
+    background-color: #DCE9EB;
     color: black;
     cursor: pointer;
 }
+
 
 header  menu{
     display: none;
@@ -77,7 +78,8 @@ header  menu{
 }
 
 menu li{
-    border-top: 2px solid rgb(163, 163, 163);
+    border-top: 2px solid white;
+    background-color: #4d5c60;
 }
 menu > li > a{
     
@@ -87,8 +89,13 @@ menu > li > a{
     color: white;
     margin: 0 auto;
     display: block;
+    font-family: var(--font4);
+    font-size: 20px;
     
 }
+
+    
+
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat center right / cover fixed ;
     width: 375px;
