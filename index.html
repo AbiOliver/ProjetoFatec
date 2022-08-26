@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>     Página inicial</title>
+   
    <link rel="stylesheet" href="./estilos/style.css" >
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
    <link rel="stylesheet" href="./estilos/telaC1.css" media=" screen and (min-width: 375px) and (max-width: 900px) ">
    <link rel="stylesheet" href="./estilos/telaC2.css" media=" screen and (min-width: 411px) and (max-width: 900px) ">
+   
 </head>
 <style>
+   
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
  
 </style>
 <body>
-   
     <header>
-        
-        <a href="index.html"><img src="imagens/logo-fatec.webp" alt=""></a>
-         <button>&#9776;</button>
-        
-        <nav>
-                            <h1>EXFATEC</h1>
-                <a href="index.html" target="_self">Página Inicial</a>
-                <li><a href="SobreNos.html" target="_parent"  > Sobre Nós</a></li>
-                <li><a href="Valores.html" target="_parent">Nossos Valores</a></li>
-                <li><a href="Duvida.html"  target="_parent" >Dúvidas Frequentes</a></li>
-                <li><a href="Contato.html" target="_parent">Contatos</a></li>
-          
-        </nav>
-       
+        <h1>EXFATEC</h1>  
+        <a href="index.html"><img src="imagens/logo-fatec.webp" alt=""></a> 
+        <span  id="burguer" class="material-icons" onclick="Menu()">menu</span>
+        <menu items>          
+            <li><a href="index.html" target="_self">Página Inicial</a></li>
+            <li><a href="SobreNos.html" target="_parent"  > Sobre Nós</a></li>
+            <li><a href="Valores.html" target="_parent">Nossos Valores</a></li>
+            <li><a href="Duvida.html"  target="_parent" >Dúvidas Frequentes</a></li>
+            <li><a href="Contato.html" target="_parent">Contatos</a></li>
+        </menu>
     </header>
     <main>
            <div class="primeira">
@@ -189,6 +188,17 @@
           
          
     </main>
+    
+    <script>
+        function clickMenu(){
+                   if( items.style.display == 'block' )  {
+                    items.style.display = 'none' 
+                   }  
+                   else{
+                    items.style.display = 'block' 
+                   }    
+        }
+    </script>
     <aside class="feed">
         <h1  id="Fh1">EXFATEC</h1>
       
@@ -217,5 +227,6 @@
          
         <p> Orgulhosamente criado pela EXFATEC!</p>
     </footer>
+   
 </body>
 </html>

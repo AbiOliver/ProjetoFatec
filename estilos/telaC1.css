@@ -37,75 +37,62 @@ header img{
  
 }
 
-header{
-   
+header{ 
     background-color: #607980;
     width: 375px;
     padding: 0;
-    padding-bottom: 10px;
+    
     padding-top: 10px;
     margin: 0px;
-}
-header   nav{
+    position:relative;
     display: flex;
-    flex-direction: row  ;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px; padding: 0;
-    
 }
 header h1{
-    padding-top: 0;
-    margin-top: 0;
-    padding: 0;
-    padding-bottom: 1em;
+   
     color: white;
-    display: none;
+    display: block;
     font-size: 2em;
     padding-left: 3em;
     font-family: var(--font4);
-   
-}
-
-header button{
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color:white;
-    background-color: transparent;
-    border: none;
-    display: none;
-    font-size: 25px;
-}
-button:focus ~ nav{
-    transition: .5s ease-in-out;
-    width: auto;
-    height: 10px;
-    overflow: visible;
-}
-
-button:focus ~ h1{
- display: none;
-}
-
-button:hover{
-    background-color: #00afef22;
-}
-header nav a {
-    font-family: var(--font4);
-    font-size:.5em;
-     color: #FFFFFF;
-    text-shadow: none;
-    margin: 0;
-    margin: 1em;
-  
-}
-
-header  nav li{
+    padding: 10px;
+    margin: 0px 5px 10px 5px;
     
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
+}
+span#burguer{
+    background-color: #4d5c60;
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100vw;
+    font-size: 36px;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+header > menu{
+    display: none;
+    width: 100vw;
+    margin:0 auto;
+}
+
+
+menu > li > a{
+    
+    padding: 10px;
+    text-decoration: none;
+    text-align: center ;
+    color: white;
+    margin: 0 auto;
+    display: block;
 }
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat center right / cover fixed ;
@@ -116,8 +103,7 @@ main > div.primeira{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 #primeiraH{
    margin-top: -50px;
@@ -137,8 +123,6 @@ div.bot{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
-   
 }
 .deco{
     font-family:'play';
@@ -146,14 +130,11 @@ div.bot{
     top: 40px;
     font-size: 10px;
     margin: 10px;
-  
     border-radius: 20px;
     padding: 8px;
     font-family: var(--font4);
     color: #DCE9EB;
-    background-color: #607980;
-    
-    
+    background-color: #607980;  
 }
 .deco:hover{
     
