@@ -14,6 +14,17 @@
    nav a {
     font-family: 'lato' ;
    }
+   header> menu> ul > li > a{
+    display: flex;
+    margin-right:45px;
+    font-size: 17px;
+    font-family: var(--font4);
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
 </style>
 <style>
     @media((min-width: 320px) and (max-width: 745px)) {
@@ -34,10 +45,10 @@
     <header>
         <h1>EXFATEC</h1>  
         <a href="index.html"><img src="imagens/logo-fatec.webp" alt=""></a> 
-        <span  id="burguer" class="material-icons" onclick="Menu()">menu</span>
-        <menu items>          
-            <li><a href="index.html" target="_self">Página Inicial</a></li>
-            <li><a href="SobreNos.html" target="_parent"  > Sobre Nós</a></li>
+        <span  id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">          
+            <li><a href="index.html" target="_top">Página Inicial</a></li>
+            <li><a href="SobreNos.html" target="_self"  > Sobre Nós</a></li>
             <li><a href="Valores.html" target="_parent">Nossos Valores</a></li>
             <li><a href="Duvida.html"  target="_parent" >Dúvidas Frequentes</a></li>
             <li><a href="Contato.html" target="_parent">Contatos</a></li>
@@ -152,3 +163,16 @@
          
         <p> Orgulhosamente criado pela EXFATEC!</p>
     </footer>
+    <script>
+
+        function clickMenu(){
+                   if( itens.style.display == 'block' )  {
+                    itens.style.display = 'none' 
+                   }  
+                   else{
+                    itens.style.display = 'block' 
+                   }    
+        }
+    </script>
+</body>
+</html>

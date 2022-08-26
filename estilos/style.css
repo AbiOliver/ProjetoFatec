@@ -63,7 +63,7 @@ span#burguer{
 header menu{
    display: flex; 
 }
-header menu a{
+header> menu a{
     display: flex;
     margin-right:45px;
     font-size: 17px;
@@ -73,7 +73,11 @@ header menu a{
     color: black;
     font-weight: lighter;
 }
-header menu a::after{
+menu >  ul{
+    list-style-type: none;
+    display: flex;
+}
+header > menu a::after{
             content:" ";
             width: 0%;
             height: 1px;

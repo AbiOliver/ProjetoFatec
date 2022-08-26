@@ -145,8 +145,8 @@
     <header>
         <h1>EXFATEC</h1>  
         <a href="index.html"><img src="imagens/logo-fatec.webp" alt=""></a> 
-        <span  id="burguer" class="material-icons" onclick="Menu()">menu</span>
-        <menu items>          
+        <span  id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu  id="itens">          
             <li><a href="index.html" target="_self">Página Inicial</a></li>
             <li><a href="SobreNos.html" target="_parent"  > Sobre Nós</a></li>
             <li><a href="Valores.html" target="_parent">Nossos Valores</a></li>
@@ -265,6 +265,16 @@
      
     <p>Orgulhosamente criado pela EXFATEC!</p>
 </footer>
-            
+    
+<script>
+    function clickMenu(){
+               if( itens.style.display == 'block' )  {
+                itens.style.display = 'none' 
+               }  
+               else{
+                itens.style.display = 'block' 
+               }    
+    }
+</script>
 </body>
 </html>
