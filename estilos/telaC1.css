@@ -137,7 +137,7 @@ div.bot{
     border-radius: 20px;
     padding: 8px;
     font-family: var(--font4);
-    color: #DCE9EB;
+    color: white;
     background-color: #607980;  
 }
 .deco:hover{
@@ -642,7 +642,7 @@ div.texto2{
   font-size: 2em;
   font-weight: lighter;
   margin-top: -30px;
-  color: #DCE9EB;
+  color: white;
   display: none; 
 }
 .form2{
@@ -709,7 +709,7 @@ footer{
     padding: 1px;
     font-family: var(--font4);
     background-color:#485a5f;
-    color: rgb(255, 255, 255);
+    color: white;
     width: 100vw;
 }
 
@@ -761,7 +761,7 @@ footer p{
      top: 08px;
      width:350px ;
      height: 415px;
-     background-color: #F1F1F1;
+     background-color: white;
      padding-left: 25px;
 
  }
