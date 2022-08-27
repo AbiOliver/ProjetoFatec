@@ -182,9 +182,11 @@ div.bot{
 }
 h1{
    
-    font-family: var(--font3);
+   
     margin-top: 5px;
     padding: 5px;
+    font-family: 'avenir';
+
     font-size: 12px;
     line-height: 17px;
 }
@@ -214,14 +216,15 @@ h1{
 }
 #ajuste1{
     margin: 0 auto;
-    margin-left: 35px;
+    margin-left: 130px;
     margin-top: 30px;
     text-align: center;
-    font-family: var(--font3);
+    font-family: 'avenir';
     font-size: 9.1px;
     font-weight: 300;
     
 }
+
 #ajuste2{
  display: none;
 }
@@ -697,6 +700,9 @@ div.texto2{
     transition: .1s ease-in-out ;
     background-color: whitesmoke;
 }
+input#iM{
+        color: black;
+}
 
 footer{
     display: flex;
@@ -762,9 +768,8 @@ footer p{
  }
  .sobreM{
    
-    font-size: large;
+    font-size: large; 
     
-     font-family: var(--font1);
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -778,7 +783,7 @@ footer p{
  .sobreM h1{
      font-style: inherit;
      
-     font-family: 'rale';
+     font-family: 'avenir';
      text-align: center;
      font-size: large;
  }
