@@ -82,6 +82,7 @@ menu li{
     border-top: 2px solid white;
     background-color: #4d5c60;
     color: white;
+    text-decoration: none;
 }
 menu{
     color: white;
@@ -132,6 +133,7 @@ div.bot{
     justify-content: space-around;
 }
 .deco{
+    font-weight: bold;
     font-family:'play';
     position: relative;
     top: 40px;
@@ -175,7 +177,7 @@ div.bot{
     height: 245px;
     padding-right: 30px;
     text-align:center;
-   
+    font-weight: bold;
     background: transparent;
     background-color: #E1EFF2;
     
@@ -186,7 +188,7 @@ h1{
     margin-top: 5px;
     padding: 5px;
     font-family: 'avenir';
-
+    font-weight: bold;
     font-size: 12px;
     line-height: 17px;
 }
@@ -221,7 +223,7 @@ h1{
     text-align: center;
     font-family: 'avenir';
     font-size: 9.1px;
-    font-weight: 300;
+    font-weight: bold;
     
 }
 
@@ -229,6 +231,7 @@ h1{
  display: none;
 }
 .objectiveP{
+    font-weight: bold;
     margin-left: 160px ;
     display: flex;
     flex-direction: row;
@@ -255,6 +258,7 @@ h1{
     
 }
 .textoOB{
+    font-weight: bold;
 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.437);
 text-align: center;
 color: white;
@@ -702,6 +706,7 @@ div.texto2{
     background-color: whitesmoke;
 }
 input#iM{
+        font-weight: bold;
         color: black;
 }
 
@@ -758,6 +763,7 @@ footer p{
     background-position: center bottom;
 }
 .desc{
+    font-weight: bold;
      left: 85px;
      position: relative;
      top: 08px;
@@ -770,7 +776,7 @@ footer p{
  .sobreM{
    
     font-size: large; 
-    
+    font-weight: bold;
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -800,6 +806,7 @@ footer p{
    
 }
 .desc2{
+    font-weight: bold;
     top: 60px;
     position: relative;
     display: flex;
