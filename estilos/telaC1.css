@@ -180,7 +180,14 @@ div.bot{
     background-color: #E1EFF2;
     
 }
-
+h1{
+   
+    font-family: var(--font3);
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 17px;
+}
 #para1{
   
     margin-top: 10px;
@@ -207,16 +214,13 @@ div.bot{
 }
 #ajuste1{
     margin: 0 auto;
-    margin-left:134px;
+    margin-left: 35px;
     margin-top: 30px;
     text-align: center;
     font-family: var(--font3);
-    font-size: 10px;
+    font-size: 9.1px;
     font-weight: 300;
     
-}
-#ajuste1 h2{
-    font-family: var(--font3);
 }
 #ajuste2{
  display: none;
@@ -758,28 +762,25 @@ footer p{
  }
  .sobreM{
    
-   
+    font-size: large;
     
-     
+     font-family: var(--font1);
      text-align: center;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-around;
      width: 360px;
+ 
      margin-left: -30px;
-     margin-top: -130px;
+     
  }
  .sobreM h1{
      font-style: inherit;
-     font-family: 'avenir';
+     
+     font-family: 'rale';
      text-align: center;
      font-size: large;
-   
- }
- .sobreM p{
-    font-family: 'avenir';
-    font-size: medium;
  }
  #larg{
     
