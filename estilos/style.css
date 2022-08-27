@@ -675,13 +675,10 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        
-
 }
 .texto3 h1{
    font-family: var(--font4);
    line-height: 2em;
-  
 }
 .texto3 p{
     width: 400px;
@@ -699,8 +696,6 @@ footer{
 #esquerdo{
     background-color: #E1EFF2;
 }
-
-
 .nav{
     box-shadow:  0px 5px 5px rgba(0, 0, 0, 0.512);
     flex-direction: column;
@@ -711,9 +706,7 @@ footer{
     color: white;
     margin: auto;
     width: 600px;
-   
 }
-
 .nav h4{
  flex-direction: row;
  padding: 10px;
@@ -723,8 +716,6 @@ footer{
  transition: .5s ease;
  font-family: var(--font4);
 }
-
-
  .nav li:hover, .nav button:hover{
     background-color: #2e3e42;
     transition: .5s ease;
@@ -738,11 +729,9 @@ footer{
     list-style-type: none;
 }
 .nav li{
-  
     transition: .5s ease;
     width: 100%;
     border-top: 1px solid white;
-
     font-family: var(--font4);
 }
 .nav p{
@@ -762,22 +751,19 @@ footer{
     font-weight: lighter;
     margin-left: 10px;
     font-family: var(--font3);
-    font-size: 16px;
-    
+    font-size: 16px;  
 }
  .nav a:after{
-     content: none;
+ content: none;
  }
  #esc {
     border-top: 1px solid rgba(0, 0, 0, 0.223);
     display:none;
-   
  }
   .p:active ~ #esc{
     display:block;
-   color: black;
+    color: black;
     background-color: white;
-   
     text-align: center;
     transition: .3s ease-in-out;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.367);

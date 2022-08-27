@@ -214,13 +214,16 @@ h1{
 }
 #ajuste1{
     margin: 0 auto;
-    margin-left: 35px;
+    margin-left:134px;
     margin-top: 30px;
     text-align: center;
     font-family: var(--font3);
     font-size: 9.1px;
     font-weight: 300;
     
+}
+#ajuste1 h2{
+    font-family: var(--font3);
 }
 #ajuste2{
  display: none;
