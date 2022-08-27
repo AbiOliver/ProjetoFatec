@@ -819,6 +819,7 @@ footer p{
    line-height: 1em;
    margin-top: -100px;
    font-size: large;
+   font-weight: lighter;
    font-family: var(--font1);
 }
 .texto3 p{
@@ -827,8 +828,8 @@ footer p{
     line-height: 1em;
     font-size: large;
     text-align: center;
-    font-size: large;
- 
+   
+    font-weight: lighter;
     margin-top: -20px;
     margin-top: -120px;
     font-family: var(--font1);
