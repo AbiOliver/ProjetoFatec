@@ -83,6 +83,9 @@ menu li{
     background-color: #4d5c60;
     color: white;
 }
+menu{
+    color: white;
+}
 menu > li > a{
     
     padding: 10px;
@@ -179,12 +182,10 @@ div.bot{
 }
 h1{
    
-    font-family: var(--font4);
+    font-family: var(--font3);
     margin-top: 5px;
     padding: 5px;
     font-size: 12px;
-    
-    
     line-height: 17px;
 }
 #para1{
@@ -196,7 +197,7 @@ h1{
     line-height: 1.05em;
     margin-left: 10px;
     width:  130px ;
-    font-family: var(--font4);
+    font-family: var(--font3);
 }
 #imagem{
     position: relative;
@@ -213,11 +214,11 @@ h1{
 }
 #ajuste1{
     margin: 0 auto;
-    margin-left: 133px;
+    margin-left: 35px;
     margin-top: 30px;
     text-align: center;
-    font-family: var(--font1);
-    font-size: 10px;
+    font-family: var(--font3);
+    font-size: 9.1px;
     font-weight: 300;
     
 }
@@ -779,7 +780,7 @@ footer p{
      
      font-family: 'rale';
      text-align: center;
-     font-size: 13px;
+     font-size: large;
  }
  #larg{
     
@@ -803,7 +804,7 @@ footer p{
 }
 .texto3{
         background-color: #F1F1F1;
-        height: 350px;
+        height: 365px;
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -816,7 +817,7 @@ footer p{
 }
 .texto3 h1{
   
-   line-height: 1em;
+   line-height: .8em;
    margin-top: -100px;
    font-size: large;
    font-weight: lighter;

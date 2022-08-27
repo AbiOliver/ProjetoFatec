@@ -204,7 +204,7 @@ div.bot{
     text-align: justify;
     font-size: 17px;
     font-weight:lighter;
-    font-family:  'lato';
+    font-family: var(--font3);
     line-height: 1.5em;
     margin-left: 50px;
     width:  400px ;
@@ -225,15 +225,23 @@ div.bot{
     
 }
 #ajuste1{
-    margin-left: -10px;
-    margin-right: 80px;
-    margin-top: 100px;
-    text-align: center;
-    font-family: var(--font1);
-    font-size: 40px;
-    font-weight: 200;
+     margin:0 auto;
+     margin-left: 20px;
+     margin-top: 100px;
     
+     text-align: center;
+    font-family: var(--font4);
+    font-size: 25px;
+    font-weight: 600;
 }
+#ajuste1 h2{
+    text-align: center;
+    font-family: var(--font4);
+    font-size: 15px;
+    font-weight: 600;
+  
+}
+
 #ajuste2{
     font-size: 20px;
     margin-top: 10px;
@@ -242,6 +250,7 @@ div.bot{
     font-weight: 250;
     text-align: center;
    font-family: var(--font1);
+   display: none;
 }
 .objectiveP{
     
@@ -289,13 +298,13 @@ pointer-events: auto;
     padding-top: 10px;
     font-family: 'rale';
     font-size: 3rem;
-    font-family: var(--font4);
+    font-family: var(--font3);
     font-weight:100 ;
     margin-bottom: 40px;  
 }
 .textoOB p{
     padding-top: 5px;
-    font-family: var(--font3);
+    font-family: var(--font4);
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -632,8 +641,8 @@ footer{
 }
 .sobreM h1{
     font-style: inherit;
-    font-weight: 100;
-    font-family: 'lato';
+    
+    font-family: var(--font4);
 
     text-align: center;
     font-size: 50px;
