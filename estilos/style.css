@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+    
+
 @font-face {
     font-family: 'avenir';
     src: url('/fonts/Fragmentcore.otf');
@@ -21,6 +24,10 @@
     --font4: 'Lato', sans-serif;
     --font5: 'play';
 }
+
+
+
+
 
 html{
     scroll-behavior: smooth;
