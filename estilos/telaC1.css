@@ -354,7 +354,7 @@ div.texto2{
     color: #67a6b8;
 }
  .nav li:hover, .nav button:hover{
-    background-color: black;
+    background-color: #2e3e42;
     transition: .5s ease;
 }
 .nav ul{
