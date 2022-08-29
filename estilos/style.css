@@ -518,6 +518,8 @@ cursor:progress;
     display: flex;
     color: white;
     font-family: var(--font4);
+    padding-right:100px ;
+  
 }
 #Fh1{
     position: relative;
@@ -590,7 +592,7 @@ footer{
     padding: 5px;
     font-family: var(--font4);
     background-color:#485a5f;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.608);
 }
 .separar{
     display: flex;
