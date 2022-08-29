@@ -7,7 +7,8 @@
     <title>Página inicial</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
    <link rel="stylesheet" href="./estilos/style.css">
-   <link rel="stylesheet" href="./estilos/telaC1.css" media=" screen and (min-width: 375px) and (max-width: 667px) ">
+   <link rel="stylesheet" href="./estilos/telaC1.css" media=" screen and (min-width: 375px) and (max-width: 411px) ">
+   <link rel="stylesheet" href="./estilos/telaC2.css" media=" screen and (min-width: 414px) and (max-width: 667px) ">
 </head>
 
 <style>
@@ -25,10 +26,75 @@
     width: 1060px;
     position: relative;
     left: 98px;
-    top: -12px;   
+    top: -12px;  
+     
 }
 
-    @media((min-width: 375px) and (max-width: 745px)) {
+@media (min-width: 414px) and (max-width: 667px){ 
+    body{
+            width: 55vw;
+        }
+        header{
+   
+        background-color: #607980;
+        width: 414px;
+      
+}
+#imagem{
+    width: 380px;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    left: 105px;
+  
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     width: 380px;
+     margin-left: -87px;
+   
+}
+.sobre{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    gap: 0;
+    width: 200px;
+   
+}
+.primeiroT{
+    width: 380px;
+    margin-left: 207px;
+    margin-bottom: 1em;
+  
+}
+.primeiroT h1{
+    font-size: 1.5em;
+    padding-top: 2em;
+    margin-left: 2em;
+    font-weight: 100;
+}
+ #para1{
+    margin: auto;
+    margin-top: 50px;
+   width: 300px;
+   font-size: 1.4em;
+   margin-left: 2em;
+}
+
+h1
+{
+    margin: auto;
+
+}
+
+
+}
+    @media((min-width: 375px) and (max-width: 411px)) {
 
         body{
             width: 55vw;
@@ -39,6 +105,7 @@
         width: 375px;
       
 }
+
 #imagem{
     width: 350px;
     height: 200px;
