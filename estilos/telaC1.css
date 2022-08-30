@@ -31,9 +31,7 @@
     --font5: 'play';
     --font6:'Poppins', sans-serif;
 }
-body{
-    width: 56vw;
-}
+
 header img{ 
    display: none;
 }
