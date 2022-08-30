@@ -683,7 +683,7 @@ footer{
     font-family: var(--font4);
     background-color:#485a5f;
     color: white;
-   
+   width: auto;
 }
 
 footer p{
