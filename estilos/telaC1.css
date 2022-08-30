@@ -1,7 +1,4 @@
 @charset "UTF-8";
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -38,7 +35,7 @@ header img{
 
 header{ 
     background-color: #607980;
-    width: 375px;
+    width: 100vw;
     padding: 0;
     padding-top: 10px;
     margin: 0px;
@@ -221,7 +218,7 @@ h1{
  display: none;
 }
 .objectiveP{
-    margin-left: 160px ;
+    margin-left: 160px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -819,4 +816,3 @@ margin-top: -80px;
 width: 350px;
 margin-left:12px;
 }
-
