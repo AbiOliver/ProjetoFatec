@@ -218,7 +218,7 @@ h1{
  display: none;
 }
 .objectiveP{
-    margin-left: 160px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -290,7 +290,7 @@ border-radius: 5px;
 .evento img{
     width: 340px;
     overflow-x: clip;
-    margin-left: 165px;
+    
 }
 div.texto2{
     text-align: center;
@@ -304,7 +304,7 @@ div.texto2{
     margin-top: -20px;
     border-top: none;
     margin-bottom: 20px;
-    margin-left: 165px;
+
 }
 #bot2{
     border: 1px solid white;
