@@ -669,7 +669,6 @@ input#iM{
         font-weight: bold;
         color: black;
 }
-
 footer{
     display: flex;
     flex-direction: row;
@@ -678,7 +677,7 @@ footer{
     font-family: var(--font4);
     background-color:#485a5f;
     color: white;
-   width: auto;
+   width: 100vw;
 }
 
 footer p{
