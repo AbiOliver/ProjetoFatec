@@ -76,6 +76,10 @@ header  menu{
     margin: 0 auto;
     color: white;
 }
+header > menu li{
+    list-style-type: none;
+    display: flex;
+}
 
 menu li{
     border-top: 2px solid white;
@@ -98,13 +102,10 @@ menu > li > a{
     font-size: 20px;
     
 }
-
-    
-
 main > div.primeira{
     background: url('../imagens/imagem\ de\ fundo.webp') no-repeat center right / cover fixed ;
-    width: 375px;
     height: 200px;
+    width: 100vw;
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.197);
     margin:0px;
     display: flex;
@@ -112,15 +113,17 @@ main > div.primeira{
     align-items: center;
     justify-content: space-around; 
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 #primeiraH{
    margin-top: -50px;
    font-family: 'Helvetica' ;
-   
    font-variant: inherit;
    color: white;
    text-align: center;
    font-size: 17px;
-
 }
 #primeiroP{
     display: none;
@@ -132,93 +135,75 @@ div.bot{
     justify-content: space-around;
 }
 .deco{
-  
     position: relative;
     top: 40px;
     font-size: 10px;
     margin: 10px;
     border-radius: 20px;
     padding: 8px;
-   font-weight: bold;
+    font-weight: bold;
     color: white;
     background-color: #607980;  
 }
 .deco:hover{
-    
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.626);
     background-color: rgba(93, 155, 212, 0.566);
-     transition: .8s;
-     left: -.7px;
+    transition: .8s;
+    left: -.7px;
 }
 #deco{
-    
-    
     padding-right: 45px;
     padding-left: 45px;
-    
-
 }
 .sobre{
-    
-  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    
+  display: flex;
+  flex-direction: column-reverse;
 }
 .primeiroT{
-    margin-left: 8px;
-    margin-top: 10px;
-    width: 200px;
-    height: 245px;
-    padding-right: 30px;
-    text-align:center;
-    background: transparent;
+    margin: 0 auto;
+    margin-top: -35px;
+    width: 250px;
+    height: 235px;
     background-color: #E1EFF2;
-    
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.338);
 }
 h1{
+    text-align: center;
     margin-top: 5px;
     padding: 5px;
-    font-family: 'avenir';
+    font-family:'avenir';
     font-weight: 100;
     font-size: 12px;
     line-height: 17px;
 }
 #para1{
+    font-family: 'lato';
     margin-top: 10px;
     text-align:center;
-    font-size: 11px;
-       font-weight: 100;
+    font-size: 14px;
+    font-weight: 100;
     line-height: 1.05em;
-    margin-left: 10px;
-    width:  130px ;
+    margin-left: 18px;
+    width:  200px ;
 }
 #imagem{
-    position: relative;
-    top: 8px;
-    left: -161px;
-    width: 100%;
+    margin: 0 auto;
 }
 #imagem img{
-    width: 178px;
-    height: 245px;
-    background-size: contain;   
+    margin-top:10px;
+    width: 300px;
+    height: 260px;
 }
 #ajuste1{
-    margin: 0 auto;
-    margin-left: 130px;
     margin-top: 30px;
     text-align: center;
     font-size: 9.1px; 
 }
-
 #ajuste2{
  display: none;
 }
 .objectiveP{
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -242,7 +227,6 @@ h1{
     opacity:100%;
 }
 .textoOB{
-   
 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.437);
 text-align: center;
 color: white;
@@ -253,7 +237,6 @@ vertical-align: middle;
 height: 80px;
 width: 85%;
 margin: auto;
-
 font-style: inherit;
 pointer-events: auto;
 opacity: 1;
@@ -261,15 +244,11 @@ border-radius: 5px;
 }
 .textoOB h3{
     padding-top: 25px;
-    
     font-size: 15px;
-    
-    
 }
 .textoOB p{
     padding-top: 20px;
     font-size: 10px;
-   
 }
 #cor1{
     background-color: #67a6b8;
@@ -290,9 +269,11 @@ border-radius: 5px;
 .evento img{
     width: 340px;
     overflow-x: clip;
-    
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.258);
+    border-radius: 5px 5px 0 0 ;
 }
 div.texto2{
+    z-index: 1;
     text-align: center;
     font-size: 15px;
     align-items: center;
@@ -304,7 +285,9 @@ div.texto2{
     margin-top: -20px;
     border-top: none;
     margin-bottom: 20px;
-
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.512);
 }
 #bot2{
     border: 1px solid white;
@@ -330,23 +313,24 @@ div.texto2{
      color: #607980; 
 }
 .nav{
-    margin-left: 20px;
+    margin: auto;
     flex-direction: column;
     padding: 0;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     border: 1px solid ;
     background-color: #607980;
     color: white;
     margin-bottom: 20px;
-    width: 340px; 
+    width: 340px;
+
 }
 .nav h4{
-    flex-direction: row;
     padding: 10px;
     margin: 0px;
     font-size: 1.5em;
     transition: .5s ease;
-    margin-left: 60px;
+    text-align: center;
    }
    .nav h4:hover{
     color: #67a6b8;
@@ -356,7 +340,6 @@ div.texto2{
     transition: .5s ease;
 }
 .nav ul{
-    flex-direction: column; 
     text-align: center;
     width: 100%;
     margin: 0;
@@ -407,13 +390,9 @@ div.texto2{
    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.367);
  }
  .form{
-    margin-left: 20px;
     height: 400px;
     width: 340px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+   margin: auto;
     background-color: #DCE9EB;
     gap: 5px;
     padding: 10px;
