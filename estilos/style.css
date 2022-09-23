@@ -25,10 +25,6 @@
     --font5: 'play';
 }
 
-body{
-    width: 100%;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -227,11 +223,8 @@ div.bot{
     
 }
 #ajuste1{
-     margin:0 auto;
-     margin-left: 20px;
-     margin-top: 100px;
-    
-     text-align: center;
+     margin:50px  auto;
+    text-align: center;
     font-family: var(--font4);
     font-size: 25px;
     font-weight: 600;
@@ -251,8 +244,8 @@ div.bot{
     margin-right: 80px;
     font-weight: 250;
     text-align: center;
-   font-family: var(--font1);
-   display: none;
+    font-family: var(--font1);
+    display: none;
 }
 .objectiveP{
     
@@ -400,7 +393,9 @@ div.texto2{
     background-color: #DCE9EB;
     gap: 32px;
     padding: 50px;
-    margin: 100px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: var(--font3);
 }
 .input input{
@@ -666,6 +661,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 50px;
 }
 .texto3 h1{
    font-family: var(--font4);
@@ -759,3 +755,18 @@ footer{
     transition: .3s ease-in-out;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.367);
   }
+  /*valores*/
+  #imagem{
+    height: 500px;
+    background-size: cover;
+}
+
+/*contatos*/
+   iframe{
+        width: 1100px;
+        margin:10px auto;
+        display: block;
+    }
+    #formC{
+        margin-bottom: 0;
+    }

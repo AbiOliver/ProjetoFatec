@@ -160,12 +160,12 @@ div.bot{
   flex-direction: column-reverse;
 }
 .primeiroT{
-    margin: 0 auto;
+    margin: auto;
     margin-top: -35px;
-    width: 250px;
+    width: 300px;
     height: 235px;
     background-color: #E1EFF2;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.338);
 }
 h1{
@@ -179,26 +179,24 @@ h1{
 }
 #para1{
     font-family: 'lato';
+    margin: auto;
     margin-top: 10px;
     text-align:center;
     font-size: 14px;
     font-weight: 100;
     line-height: 1.05em;
-    margin-left: 18px;
     width:  200px ;
 }
-#imagem{
-    margin: 0 auto;
-}
+
 #imagem img{
-    margin-top:10px;
-    width: 300px;
+    width: 350px;
     height: 260px;
+    box-shadow: 0px 2px 3px black;
 }
 #ajuste1{
-    margin-top: 30px;
+    margin: 30px auto;
     text-align: center;
-    font-size: 9.1px; 
+    font-size: 10px; 
 }
 #ajuste2{
  display: none;
@@ -391,8 +389,8 @@ div.texto2{
  }
  .form{
     height: 400px;
-    width: 340px;
-   margin: auto;
+    width: 350px;
+    margin:auto;
     background-color: #DCE9EB;
     gap: 5px;
     padding: 10px;
@@ -421,7 +419,6 @@ div.texto2{
     margin-top: 2px;
     box-shadow: 1px 1px  1px rgba(0, 0, 0, 0.612);
 }
-   
 .input input:hover{
     border: 1px solid black;
     box-shadow: 1px 1px  5px rgba(0, 0, 0, 0.612);  
@@ -691,8 +688,7 @@ footer p{
 
 #imagemS{
     
-    left: 83px;
-    position: relative;
+   
     width: 350px;
     height: 205px;
     margin: 0;
@@ -700,25 +696,20 @@ footer p{
     background-position: center bottom;
 }
 .desc{
-     left: 85px;
-     position: relative;
-     top: 08px;
      width:350px ;
-     height: 415px;
-     background-color: white;
-     padding-left: 25px;
-
+     height: 350px;
+     background-color: #F1F1F1;
+  
  }
  .sobreM{
-   
-    font-size: large; 
+     font-size: large; 
      text-align: center;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-around;
-     width: 360px;
-     margin-left: -30px;
+     width: 350px;
+   
  }
  .sobreM h1{
      font-style: inherit;
@@ -732,7 +723,6 @@ footer p{
     height: 300px;
     margin: 0 auto; text-align: center;
     display: block;
-    left: 83px;
 }
 .desc2{
     top: 60px;
@@ -752,9 +742,7 @@ footer p{
         align-items: center;
         justify-content: space-evenly;
         margin: 10px;
-        margin-left: 175px;
         margin-top: 0;
-  
 }
 .texto3 h1{
    line-height: .8em;
@@ -780,17 +768,30 @@ footer p{
 #esquerdo{
     background-color: #E1EFF2;
 }
-
+/*valores*/
+#imagem{
+    width:350px;
+    height: 200px;
+    background-size: cover;
+    display: block;
+    margin: 10px auto;
+}
 
 /* pag contatos*/
 .frame{
     display: flex;
     flex-direction: column-reverse;
-
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
 }
-
+iframe{
+    width: 360px;
+    height: 300px;
+    margin-bottom: 0;
+    }
 #formC{
-margin-top: -80px;
-width: 350px;
-margin-left:12px;
-}
+margin-top: -100px;
+width: 360px;
+background-color: #F1F1F1;
+}   
