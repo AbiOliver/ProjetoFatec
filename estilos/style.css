@@ -168,33 +168,27 @@ div.bot{
 }
 .sobre{
     
-  
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 175px;
-    position: relative;
-    
+    justify-content: space-around;
+ 
+
 }
 .primeiroT{
-    margin-left: 70px;
-    margin-top: 95px;
     width: 500px;
     height: 500px;
     font-size: 10px;
     text-align:center;
-    
     background: transparent;
     background-color: #E1EFF2;
     
 }
  h1{
-   
-   
     margin-top: 90px;
     padding: 9px;
     font-size: 35px;
-   
     font-family: var(--font4);
     line-height: 50px;
 }
@@ -208,19 +202,10 @@ div.bot{
     width:  400px ;
 }
 
-#imagem{
-    
-   position: absolute;
-   top: 95px;
-   left: 594px;
-   width: 50%;
 
-}
 #imagem img{
-    width: 600px;
-    height: 500px;
-   
-    
+    width: 500px;
+    height: 500px;  
 }
 #ajuste1{
      margin:50px  auto;
