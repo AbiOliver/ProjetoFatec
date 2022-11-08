@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
-   
-  
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
    <link rel="stylesheet" href="./estilos/style.css" media="(min-width:992px)" >
    <link rel="stylesheet" href="./estilos/telaC1.css" media="(max-width:992px)">
-   
 </head>
 <style>
-   
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
- 
 </style>
 <body >
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <header>
         <h1>EXFATEC</h1>  
         <a href="index.html"><img src="imagens/logo-fatec.webp" alt=""></a> 
@@ -228,7 +234,7 @@
                     itens.style.display = 'block' 
                    }    
         }
-        window.alert('Projeto em andamento');
+       
     </script>
   
 
